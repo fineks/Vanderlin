@@ -156,7 +156,7 @@
 	salvage_result = /obj/item/natural/cloth
 
 /obj/item/clothing/armor/leather/jacket/gatemaster_jacket/armored
-	name = "gatemaster's coat"
+	name = "Rihtarzh coat"
 	desc = "A thick cloth padded coat specialty made for the gatemaster."
 	icon_state = "master_coat_cuirass"
 	blocksound = PLATEHIT
