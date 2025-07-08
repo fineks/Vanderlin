@@ -8,8 +8,8 @@
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
 	display_order = 19 //lol?
 	faction = FACTION_TOWN
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	min_pq = 1
 	bypass_lastclass = TRUE
 
@@ -19,6 +19,7 @@
 	outfit = /datum/outfit/job/archivist
 	spells = list(/obj/effect/proc_holder/spell/self/learnspell, /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 	give_bank_account = 100
+
 
 /datum/outfit/job/archivist
 	job_bitflag = BITFLAG_ROYALTY

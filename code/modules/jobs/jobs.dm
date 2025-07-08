@@ -1,14 +1,11 @@
 GLOBAL_LIST_INIT(noble_positions, list(
-	/datum/job/lord::title,
-	/datum/job/consort::title,
-	/datum/job/hand::title,
-	/datum/job/prince::title,
-	/datum/job/captain::title,
-	/datum/job/steward::title,
-	/datum/job/magician::title,
-	/datum/job/archivist::title,
-	/datum/job/courtphys::title,
-	/datum/job/minor_noble::title,
+	/datum/job/kluchnik::title,
+	/datum/job/knyaz::title,
+	/datum/job/kupec::title,
+	/datum/job/rihtarzh::title,
+	/datum/job/skornyak::title,
+	/datum/job/znahar::title,
+	/datum/job/sotnik::title,
 ))
 GLOBAL_PROTECT(noble_positions)
 
