@@ -21,7 +21,7 @@
 	miracle = FALSE
 
 	overlay_state = "light"
-	invocation = "Let there be light."
+	invocation = "Очковзрывный светозар"
 	invocation_type = "whisper" //can be none, whisper, emote and shout
 
 	attunements = list(

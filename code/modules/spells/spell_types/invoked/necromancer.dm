@@ -97,7 +97,7 @@
 /obj/effect/proc_holder/spell/invoked/raise_undead/cast(list/targets, mob/living/carbon/human/user)
 	. = ..()
 
-	user.say("Hgf'ant'kthar!")
+	user.say("ХУЕРЫЛКА МЁРТВОВЫКИДЫШЬ!")
 
 	var/obj = targets[1]
 
@@ -127,33 +127,33 @@
 
 	if(target.ckey) //player still inside body
 
-		var/offer = alert(target, "Do you wish to be reanimated as a minion?", "RAISED BY NECROMANCER", "Yes", "No")
+		var/offer = alert(target, "Жаждешь ожить в качестве мертвеца?", "ТЕБЯ ЖДЁТ НОВАЯ ЖИЗНЬ", "Да", "Нет")
 		var/offer_time = world.time
 
-		if(offer == "No" || world.time > offer_time + 5 SECONDS)
-			to_chat(target, span_danger("Another soul will take over."))
+		if(offer == "Нет" || world.time > offer_time + 5 SECONDS)
+			to_chat(target, span_danger("Твоё тело достанется иным."))
 			offer_refused = TRUE
 
-		else if(offer == "Yes")
-			to_chat(target, span_danger("You rise as a minion."))
+		else if(offer == "Да")
+			to_chat(target, span_danger("Жизнь принимает тебя обратно."))
 			target.turn_to_minion(user, target.ckey)
-			target.visible_message(span_warning("[target.real_name]'s eyes light up with an evil glow."), runechat_message = TRUE)
+			target.visible_message(span_warning("[target.real_name] просыпается. Его очи сияют осознанностью."), runechat_message = TRUE)
 			return TRUE
 
 	if(!target.ckey || offer_refused) //player is not inside body or has refused, poll for candidates
 
-		var/list/candidates = pollCandidatesForMob("Do you want to play as a Necromancer's minion?", null, null, null, 100, target, POLL_IGNORE_NECROMANCER_SKELETON)
+		var/list/candidates = pollCandidatesForMob("Хочешь занять чьё-то тело?", null, null, null, 100, target, POLL_IGNORE_NECROMANCER_SKELETON)
 
 		// theres at least one candidate
 		if(LAZYLEN(candidates))
 			var/mob/C = pick(candidates)
 			target.turn_to_minion(user, C.ckey)
-			target.visible_message(span_warning("[target.real_name]'s eyes light up with an eerie glow."), runechat_message = TRUE)
+			target.visible_message(span_warning("[target.real_name] просыпается. Его очи сияют триумфом."), runechat_message = TRUE)
 
 		//no candidates, raise as npc
 		else
 			target.turn_to_minion(user)
-			target.visible_message(span_warning("[target.real_name]'s eyes light up with a weak glow."), runechat_message = TRUE)
+			target.visible_message(span_warning("[target.real_name] просыпается. Его очи сияют блаженностью."), runechat_message = TRUE)
 
 		return TRUE
 
@@ -195,13 +195,13 @@
 	dna.species.soundpack_m = new /datum/voicepack/skeleton()
 	dna.species.soundpack_f = new /datum/voicepack/skeleton()
 
-	src.base_strength = 6
-	src.base_perception = 8
-	src.base_endurance = 8
-	src.base_constitution = 8
-	src.base_intelligence = 4
-	src.base_speed = 9
-	src.base_fortune = 6
+	src.base_strength = 10
+	src.base_perception = 10
+	src.base_endurance = 10
+	src.base_constitution = 11
+	src.base_intelligence = 8
+	src.base_speed = 10
+	src.base_fortune = 10
 
 
 	cmode_music = 'sound/music/cmode/antag/combat_cult.ogg'
@@ -234,7 +234,7 @@
 
 	update_body()
 
-	to_chat(src, span_userdanger("My master is [master.real_name]."))
+	to_chat(src, span_userdanger("В это мир меня вернул [master.real_name]."))
 
 	master.minions += src
 

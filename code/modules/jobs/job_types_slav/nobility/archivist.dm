@@ -1,5 +1,5 @@
 /datum/job/archivist
-	title = "Archivist"
+	title = "Wedun"
 	tutorial = "Ты собирал и хранил знания много десятков лет. Ты желал пронести их с собой через века,\
 	и поэтому пошёл на сделку с ведьмой - ты лишился своей свободы и воли. Но взамен получил бессмертие.\
 	Теперь тебя ждёт увлекательнейшее тысячелетие которое ты наполнишь открытиями и знаниями."
@@ -61,8 +61,6 @@
 	H.adjust_skillrank(/datum/skill/craft/alchemy, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/magic/arcane, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/labor/mathematics, 6, TRUE)
-	if(H.age == AGE_OLD)
-		H.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)
 	H.change_stat(STATKEY_STR, 2)
 	H.change_stat(STATKEY_INT, 10)
 	H.change_stat(STATKEY_CON, 2)
@@ -71,3 +69,11 @@
 	ADD_TRAIT(H, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_DEATHSIGHT, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_SHOCKIMMUNE, TRAIT_GENERIC)
+
+	H.mind?.adjust_spellpoints(14)
+	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/mimicry)
+	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_undead)
+	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/learnspell)
+	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
+
+	H?.generate_random_attunements(rand(4,6))

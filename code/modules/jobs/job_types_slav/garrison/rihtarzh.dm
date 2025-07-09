@@ -11,7 +11,7 @@
 	faction = FACTION_TOWN
 	total_positions = 1
 	spawn_positions = 1
-	min_pq = 10
+	min_pq = 0
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list (HUMAN)
@@ -64,8 +64,10 @@
 	H.change_stat(STATKEY_SPD, 1)
 	H.change_stat(STATKEY_PER, 1)
 
+	ADD_TRAIT(H, TRAIT_KNOWBANDITS, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_BREADY, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 
 	if(H.dna?.species)

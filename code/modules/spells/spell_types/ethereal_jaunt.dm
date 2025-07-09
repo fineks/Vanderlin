@@ -4,7 +4,7 @@
 	overlay_state = "jaunt"
 	school = "transmutation"
 	recharge_time = 300
-	invocation = "VANISHIKA"
+	invocation = "ГНИЛОЁБЛЫЙ ХУЕПЕРД!"
 	invocation_type = "shout"
 	range = -1
 	cooldown_min = 550 //50 deciseconds reduction per rank

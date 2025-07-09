@@ -19,7 +19,7 @@
 
 	miracle = FALSE
 
-	invocation = ""
+	invocation = "ТРАХОЖОПНЫЙ ПИЗДОШИВ!"
 	attunements = list(
 		/datum/attunement/life = 1.2
 	)

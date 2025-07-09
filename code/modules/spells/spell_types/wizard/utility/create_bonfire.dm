@@ -22,7 +22,7 @@
 
 	miracle = FALSE
 
-	invocation = "Bonfire!"
+	invocation = "ПИЗДОВОРОТ!"
 	invocation_type = "shout"
 
 	summon_type = list(

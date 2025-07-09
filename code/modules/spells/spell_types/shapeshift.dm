@@ -5,7 +5,7 @@
 	cooldown_min = 50
 	range = -1
 	include_user = TRUE
-	invocation = "RAC'WA NO!"
+	invocation = "ЧИСТОМОШОНОЧНЫЙ ЗЛОБНОЁБ!"
 	invocation_type = "shout"
 	action_icon_state = "shapeshift"
 

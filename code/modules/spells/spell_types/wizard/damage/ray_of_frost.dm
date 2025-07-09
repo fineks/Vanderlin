@@ -112,7 +112,7 @@
 		/datum/attunement/ice = 0.6,
 	)
 	miracle = FALSE
-	invocation = "Chill!"
+	invocation = "НЕТРАХУЕМЫЙ ЗЛОБНОХЕР!"
 	invocation_type = "shout"
 
 	// Beam properties

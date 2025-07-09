@@ -15,7 +15,7 @@
 	charging_slowdown = 3
 	cost = 1
 
-	invocation = "Valtarem!"
+	invocation = "ЁБЛОЛОМНЫЙ СРАКИРПИЧ!"
 	invocation_type = "shout"
 
 	attunements = list(

@@ -10,7 +10,12 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = RACES_PLAYER_NONDISCRIMINATED
+	allowed_races = list(
+		"Humen"
+		"Dwarf"
+		"Tiefling"
+		"Elf"
+	)
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
 

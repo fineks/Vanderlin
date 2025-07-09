@@ -26,7 +26,7 @@
 	miracle = FALSE
 
 	overlay_state = "aerosolize"
-	invocation = "Poison Cloud!"
+	invocation = "ВОНЕЖОПНЫЙ ГОВНОНЮХ!"
 	invocation_type = "shout" //can be none, whisper, emote and shout
 
 /obj/effect/proc_holder/spell/invoked/poisonspray5e/cast(list/targets, mob/living/user)

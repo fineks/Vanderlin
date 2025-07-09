@@ -1,9 +1,9 @@
 /datum/job/monk
-	title = "Acolyte"
-	tutorial = "Chores, exercise, prayer... and more chores. \
-	You are a humble acolyte at the temple in Vanderlin, \
-	not yet a trained guardian or an ordained priest. \
-	But who else would keep the fires lit and the floors clean?"
+	title = "Poslushnik"
+	tutorial = "После того как Псидон наказал Пантеон за то что те допустили войну, \
+	многое поменялось. Церковь десяти более не уважаема, да и теперь она церковь девяти. \
+	Вы с помощью многих связей и молитв смогли добится права вернуть слово десяти в Крыльск. \
+	Здесь ваши чудеса не работают, без ведьминого одобрения. Здесь вас считают предателями, но вы покажете всем правильный путь."
 	flag = MONK
 	department_flag = CHURCHMEN
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
@@ -21,7 +21,7 @@
 	give_bank_account = TRUE
 
 /datum/outfit/job/monk
-	name = "Acolyte"
+	name = "Poslushnik"
 	jobtype = /datum/job/monk
 	allowed_patrons = ALL_TEMPLE_PATRONS
 	job_bitflag = BITFLAG_CHURCH

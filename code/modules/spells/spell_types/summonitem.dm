@@ -3,7 +3,7 @@
 	desc = ""
 	school = "transmutation"
 	recharge_time = 100
-	invocation = "GAR YOK"
+	invocation = "ПИЗДОЛИЦ!"
 	invocation_type = "whisper"
 	range = -1
 	level_max = 0 //cannot be improved

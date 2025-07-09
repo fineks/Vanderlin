@@ -11,7 +11,7 @@
 	faction = FACTION_TOWN
 	total_positions = 2
 	spawn_positions = 2
-	min_pq = 8
+	min_pq = 0
 	bypass_lastclass = TRUE
 	selection_color = "#920909"
 
@@ -79,6 +79,7 @@
 	H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_KNOWBANDITS, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_BREADY, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
 	if(H.dna?.species?.id == "human")
 		H.dna.species.soundpack_m = new /datum/voicepack/male/knight()

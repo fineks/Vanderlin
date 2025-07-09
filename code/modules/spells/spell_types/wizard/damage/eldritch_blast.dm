@@ -23,7 +23,7 @@
 
 	miracle = FALSE
 
-	invocation = "Eldritch blast!" // Bad incantation but it's funny.
+	invocation = "ПИЗДАЁБЛАЯ ХУЕДРЫГАЛА!" // Bad incantation but it's funny.
 	invocation_type = "shout"
 
 	attunements = list(

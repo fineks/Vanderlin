@@ -20,7 +20,7 @@
 
 	miracle = FALSE
 
-	invocation = ""
+	invocation = "ЗЛОБНОВОРОТ ТРАХОГЛАВ!"
 	invocation_type = "shout" //can be none, whisper, emote and shout
 	include_user = FALSE
 

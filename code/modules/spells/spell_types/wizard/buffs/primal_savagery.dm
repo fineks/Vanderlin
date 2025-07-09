@@ -27,7 +27,7 @@
 	miracle = FALSE
 
 	overlay_state = "wolf_head"
-	invocation = "Teeth of a serpent."
+	invocation = "Гниложопый пиздахуй."
 	invocation_type = "whisper" //can be none, whisper, emote and shout
 // Notes: Bard, Sorcerer, Warlock, Wizard
 

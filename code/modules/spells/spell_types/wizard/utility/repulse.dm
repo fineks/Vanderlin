@@ -2,7 +2,7 @@
 	name = "Repulse"
 	desc = "Conjure forth a wave of energy, repelling anyone around you."
 	recharge_time = 400
-	invocation = "GITTAH WEIGH"
+	invocation = "ГРЯЗНОВОННЫЙ ХУЕЗАЛУП!"
 	invocation_type = "shout"
 	range = 5
 	cooldown_min = 150

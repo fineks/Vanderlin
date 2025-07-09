@@ -6,7 +6,7 @@
 	overlay_state = "knock"
 	school = "transmutation"
 	recharge_time = 100
-	invocation = "AULIE OXIN FIERA"
+	invocation = "ЖОПОТРАШИЙ ХУЕПЕРД!"
 	invocation_type = "whisper"
 	range = 3
 	cooldown_min = 0.5 MINUTES //20 deciseconds reduction per rank
