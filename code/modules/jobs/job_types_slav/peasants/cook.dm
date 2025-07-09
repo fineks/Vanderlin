@@ -12,7 +12,7 @@
 	min_pq = -20
 	bypass_lastclass = TRUE
 
-	allowed_sexes = list(MALE)
+	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
 		"Humen",
 		"Elf",

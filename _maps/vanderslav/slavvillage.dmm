@@ -1079,6 +1079,7 @@
 /obj/item/clothing/pants/tights/black,
 /obj/item/perfume/random,
 /obj/item/clothing/shirt/dress/royal/prince,
+/obj/item/clothing/cloak/half/duelcape,
 /turf/open/floor/cobble,
 /area/rogue/indoors/town/manor)
 "bkR" = (
@@ -1175,6 +1176,8 @@
 /obj/item/clothing/head/menacing,
 /obj/item/clothing/head/hatblu,
 /obj/item/clothing/ring/silver/rontz,
+/obj/item/key/priest,
+/obj/item/key/veteran,
 /turf/open/floor/carpet,
 /area/rogue/indoors/town/garrison)
 "bpM" = (
@@ -1662,6 +1665,7 @@
 "bPw" = (
 /obj/structure/door/iron/bars,
 /obj/effect/mapping_helpers/access/keyset/manor/lord,
+/obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/naturalstone,
 /area/rogue/under/town/sewer)
 "bQo" = (
@@ -2225,6 +2229,7 @@
 /area/rogue/indoors/town/manor)
 "csW" = (
 /obj/structure/closet/crate/chest/neu_iron,
+/obj/item/clothing/gloves/rare/elfplate,
 /turf/open/floor/naturalstone,
 /area/rogue/under/cave)
 "csY" = (
@@ -2648,6 +2653,10 @@
 	},
 /turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/town/tavern)
+"cSo" = (
+/obj/item/clothing/neck/psycross/silver,
+/turf/open/floor/naturalstone,
+/area/rogue/under/town/sewer)
 "cSz" = (
 /obj/machinery/light/fueled/firebowl/church/unholyfire,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2772,6 +2781,13 @@
 	dir = 1
 	},
 /area/rogue/outdoors/rtfield/safe)
+"ddE" = (
+/obj/structure/chair/wood/alt/chair3{
+	dir = 1
+	},
+/obj/item/clothing/head/fisherhat,
+/turf/open/floor/dirt/road,
+/area/rogue/outdoors/town)
 "dem" = (
 /obj/machinery/anvil/crafted,
 /obj/structure/flora/grass/bush,
@@ -3439,6 +3455,10 @@
 "dSS" = (
 /turf/open/floor/ruinedwood/turned,
 /area/rogue/under/cave)
+"dSY" = (
+/obj/item/clothing/shoes/boots/rare/zybanplate,
+/turf/open/floor/naturalstone,
+/area/rogue/outdoors/town/roofs)
 "dTu" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/grass,
@@ -3551,6 +3571,7 @@
 	pixel_y = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/reagent_containers/peppermill,
 /turf/open/floor/tile/kitchen,
 /area/rogue/indoors/town/manor)
 "dZU" = (
@@ -4911,6 +4932,7 @@
 /obj/item/clothing/armor/leather/hide/goblin,
 /obj/item/clothing/armor/leather/hide/goblin,
 /obj/item/clothing/armor/leather/hide/goblin,
+/obj/item/clothing/head/brimmed,
 /turf/open/floor/naturalstone,
 /area/rogue/indoors/town/dwarfin)
 "ftf" = (
@@ -5089,6 +5111,7 @@
 	icon_state = "zizobanner";
 	pixel_y = 32
 	},
+/obj/item/key/tower,
 /turf/open/floor/churchmarble,
 /area/rogue/indoors/town/magician)
 "fEO" = (
@@ -5766,6 +5789,15 @@
 /obj/structure/spider/stickyweb/solo,
 /turf/open/floor/grass,
 /area/rogue/outdoors/town/roofs)
+"guX" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "tablewood2"
+	},
+/obj/item/clothing/head/brimmed,
+/obj/item/clothing/head/chaperon/greyscale,
+/turf/open/floor/naturalstone,
+/area/rogue/indoors/town/dwarfin)
 "gvc" = (
 /mob/living/carbon/human/species/human/northern/bum/ambush,
 /obj/effect/mapping_helpers/floor_clothing_equipper,
@@ -8684,6 +8716,7 @@
 /obj/machinery/essence/research_matrix,
 /obj/structure/table/wood,
 /obj/item/clothing/neck/talkstone,
+/obj/item/key/mage,
 /turf/open/floor/church/purple,
 /area/rogue/indoors/town/magician)
 "jDD" = (
@@ -9805,6 +9838,11 @@
 /obj/effect/spawner/map_spawner/hauntz_random,
 /turf/open/floor/dirt,
 /area/rogue/outdoors/town)
+"kPY" = (
+/obj/structure/closet/dirthole/closed/loot,
+/obj/item/clothing/gloves/rare/grenzelplate,
+/turf/open/floor/dirt/road,
+/area/rogue/under/town/ruin)
 "kQc" = (
 /obj/structure/closet/crate/crafted_closet/lord,
 /obj/item/perfume/random,
@@ -10705,6 +10743,7 @@
 /obj/item/flint,
 /obj/item/reagent_containers/peppermill,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/kitchen/rollingpin,
 /turf/open/floor/tile/kitchen,
 /area/rogue/indoors/town/manor)
 "lPe" = (
@@ -11142,6 +11181,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/dirt,
 /area/rogue/outdoors/town)
+"mmU" = (
+/obj/structure/flora/grass/bush,
+/obj/item/key/vampire,
+/turf/open/floor/grass,
+/area/rogue/outdoors/town)
 "mnu" = (
 /obj/structure/spider/nest,
 /turf/open/floor/volcanic,
@@ -11359,6 +11403,14 @@
 /obj/machinery/light/fueled/wallfire/candle/l,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor)
+"mAo" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "tablewood2"
+	},
+/obj/item/clothing/head/brimmed,
+/turf/open/floor/naturalstone,
+/area/rogue/indoors/town/dwarfin)
 "mAq" = (
 /obj/structure/meathook,
 /obj/structure/flora/grass,
@@ -11503,6 +11555,7 @@
 "mHe" = (
 /obj/structure/closet/crate/crafted_closet,
 /obj/item/weapon/shield/wood,
+/obj/item/clothing/head/brimmed,
 /turf/open/floor/carpet/lord/left,
 /area/rogue/indoors/town)
 "mHf" = (
@@ -11792,6 +11845,7 @@
 /obj/item/ingot/steel,
 /obj/item/ingot/steel,
 /obj/item/ingot/steel,
+/obj/item/clothing/neck/psycross/silver,
 /turf/open/floor/ruinedwood/darker,
 /area/rogue/indoors/town/smithy)
 "mWo" = (
@@ -11816,6 +11870,7 @@
 /obj/item/clothing/armor/gambeson/apothecary,
 /obj/item/clothing/armor/gambeson/light,
 /obj/item/clothing/cloak/battlenun,
+/obj/item/clothing/head/helmet/battlenun,
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/shop)
 "mWI" = (
@@ -11985,6 +12040,8 @@
 /obj/structure/closet/crate/crafted_closet,
 /obj/item/clothing/head/papakha,
 /obj/item/clothing/neck/bevor/iron,
+/obj/item/clothing/gloves/angle,
+/obj/item/clothing/cloak/cape/knight,
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/manor)
 "ndG" = (
@@ -12876,6 +12933,7 @@
 /obj/item/storage/keyring/captain,
 /obj/machinery/light/fueled/wallfire/candle/r,
 /obj/item/natural/feather,
+/obj/item/key/captain,
 /turf/open/floor/herringbone,
 /area/rogue/indoors/town/manor)
 "oaN" = (
@@ -12994,6 +13052,7 @@
 	desc = "Это кольцо носят старшие чины любого работящего общества.";
 	name = "Brigadir ring"
 	},
+/obj/item/clothing/head/courtierhat,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/steward)
 "ogo" = (
@@ -13157,6 +13216,7 @@
 "ooZ" = (
 /obj/item/storage/keyring/hand,
 /obj/structure/closet/crate/drawer,
+/obj/item/key/hand,
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/manor)
 "opw" = (
@@ -14757,6 +14817,13 @@
 /obj/structure/spider/stickyweb,
 /turf/open/floor/grass,
 /area/rogue/outdoors/town/roofs)
+"pVE" = (
+/obj/item/clothing/head/rare/zybanplate,
+/obj/item/clothing/shoes/boots/rare/elfplate,
+/obj/item/clothing/shoes/boots/rare/grenzelplate,
+/obj/structure/closet/crate/chest/old_crate,
+/turf/open/floor/ruinedwood/turned/darker,
+/area/rogue/indoors/town/shop)
 "pVU" = (
 /turf/closed/wall/mineral/stonebrick,
 /area/rogue/under/cave)
@@ -15138,6 +15205,12 @@
 /mob/living/carbon/human/species/skeleton/npc/peasant,
 /turf/open/floor/dirt/road,
 /area/rogue/indoors/town/church)
+"qsp" = (
+/obj/item/clothing/cloak/half/shadowcloak/cult,
+/obj/structure/closet/crate/crafted_closet,
+/obj/item/clothing/face/skullmask,
+/turf/open/floor/blocks,
+/area/rogue/indoors/town/manor)
 "qsw" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/ruinedwood/spiralfade,
@@ -15172,6 +15245,7 @@
 /obj/item/perfume/random,
 /obj/item/clothing/shirt/dress/royal/princess,
 /obj/item/clothing/shirt/dress/silkdress/princess,
+/obj/item/clothing/cloak/half/duelcape,
 /turf/open/floor/ruinedwood/darker,
 /area/rogue/indoors/town/manor)
 "qtz" = (
@@ -15342,6 +15416,7 @@
 /obj/structure/closet/crate/drawer,
 /obj/item/storage/keyring/steward,
 /obj/item/natural/feather,
+/obj/item/key/steward,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/steward)
 "qyo" = (
@@ -15604,6 +15679,7 @@
 "qKK" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/snacks/cheese_wedge,
+/obj/item/kitchen/rollingpin,
 /turf/open/floor/tile/kitchen,
 /area/rogue/indoors/town/manor)
 "qKN" = (
@@ -15847,6 +15923,7 @@
 /obj/item/plate/tray,
 /obj/item/plate/tray,
 /obj/item/reagent_containers/peppermill,
+/obj/item/kitchen/rollingpin,
 /turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/town/tavern)
 "qWF" = (
@@ -16509,6 +16586,7 @@
 /obj/machinery/light/fueled/wallfire/candle/l,
 /obj/item/flint,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/cloak/cape/puritan,
 /turf/open/floor/ruinedwood/darker,
 /area/rogue/indoors/town/shop)
 "rJy" = (
@@ -17198,6 +17276,11 @@
 /obj/structure/flora/ausbushes/brflowers,
 /turf/open/floor/grass,
 /area/rogue/outdoors/rtfield)
+"sss" = (
+/obj/structure/closet/dirthole/closed/loot,
+/obj/item/clothing/gloves/rare/zybanplate,
+/turf/open/floor/dirt,
+/area/rogue/outdoors/exposed/church)
 "sst" = (
 /obj/structure/rack/shelf/biggest,
 /obj/item/clothing/head/sack,
@@ -17853,6 +17936,11 @@
 "tjR" = (
 /turf/closed/mineral,
 /area/rogue/indoors/town/church/inquisition)
+"tkz" = (
+/obj/structure/closet/dirthole/closed/loot,
+/obj/item/clothing/armor/rare/grenzelplate,
+/turf/open/floor/dirt,
+/area/rogue/outdoors/exposed/church)
 "tkU" = (
 /obj/structure/fluff/statue/shisha,
 /turf/open/floor/cobble/mossy,
@@ -18161,6 +18249,26 @@
 /obj/item/key/houses/house1,
 /obj/item/key/houses/house2,
 /obj/item/key/houses/house3,
+/obj/item/key/apothecary,
+/obj/item/key/archive,
+/obj/item/key/artificer,
+/obj/item/key/atarms,
+/obj/item/key/bathhouse,
+/obj/item/key/blacksmith,
+/obj/item/key/butcher,
+/obj/item/key/church,
+/obj/item/key/clinic,
+/obj/item/key/consort,
+/obj/item/key/courtphys,
+/obj/item/key/dungeon,
+/obj/item/key/elder,
+/obj/item/key/feldsher,
+/obj/item/key/forrestgarrison,
+/obj/item/key/garrison,
+/obj/item/key/graveyard,
+/obj/item/key/inquisition,
+/obj/item/key/manor,
+/obj/item/key/soilson,
 /turf/open/floor/wood,
 /area/rogue/indoors/town/steward)
 "tEU" = (
@@ -18486,6 +18594,7 @@
 /obj/item/kitchen/rollingpin,
 /obj/item/candle/yellow,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/reagent_containers/peppermill,
 /turf/open/floor/tile/kitchen,
 /area/rogue/indoors/town/manor)
 "tVN" = (
@@ -19668,6 +19777,7 @@
 /area/rogue/indoors/town/church/chapel)
 "vaq" = (
 /obj/structure/toilet,
+/obj/item/clothing/gloves/rare/elfplate/welfplate,
 /turf/open/floor/grass,
 /area/rogue/indoors/town)
 "vas" = (
@@ -19931,6 +20041,10 @@
 /obj/structure/flora/ausbushes/brflowers,
 /turf/open/floor/grass,
 /area/rogue/outdoors/rtfield)
+"vng" = (
+/obj/item/clothing/head/fisherhat,
+/turf/open/floor/dirt/road,
+/area/rogue/outdoors/town)
 "vnr" = (
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town/dwarfin)
@@ -20831,6 +20945,10 @@
 /obj/structure/fake_machine/vendor/butcher,
 /turf/open/floor/metal/barograte,
 /area/rogue/indoors/town/apothecary)
+"wkV" = (
+/obj/item/key/porta,
+/turf/open/floor/twig,
+/area/rogue/outdoors/town/roofs)
 "wlc" = (
 /turf/closed/wall/mineral/stone,
 /area/rogue/indoors/town/church)
@@ -21290,6 +21408,7 @@
 /obj/item/flint,
 /obj/item/weapon/shovel/small,
 /obj/item/candle/yellow,
+/obj/item/reagent_containers/peppermill,
 /turf/open/floor/tile/kitchen,
 /area/rogue/indoors/town/manor)
 "wJB" = (
@@ -21696,6 +21815,7 @@
 /obj/item/clothing/ring/gold/saffira,
 /obj/item/storage/keyring/merchant,
 /obj/item/natural/feather,
+/obj/item/key/merchant,
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/shop)
 "xfb" = (
@@ -21726,6 +21846,7 @@
 /obj/item/clothing/head/roguehood/phys,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/armor/rare/zybanplate,
 /turf/open/floor/ruinedwood/darker,
 /area/rogue/indoors/town/shop)
 "xfG" = (
@@ -22284,6 +22405,7 @@
 	pixel_y = -32
 	},
 /obj/item/storage/keyring/innkeep,
+/obj/item/kitchen/rollingpin,
 /turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/town/tavern)
 "xOZ" = (
@@ -48661,7 +48783,7 @@ rHR
 rOh
 fWs
 rHR
-rHR
+cSo
 fWs
 fWs
 rOh
@@ -49810,7 +49932,7 @@ rOh
 rOh
 rOh
 ppa
-nCT
+kPY
 sBu
 nny
 sBu
@@ -75744,7 +75866,7 @@ jIR
 lTl
 jkm
 qnN
-bDd
+mAo
 lTl
 lTl
 jIR
@@ -79328,7 +79450,7 @@ oAJ
 gbK
 rTk
 hyb
-lcv
+mmU
 eFH
 obA
 qxO
@@ -84796,7 +84918,7 @@ xUl
 xUl
 dEh
 eWF
-mBu
+qsp
 pNy
 vtj
 ltV
@@ -92661,7 +92783,7 @@ iOG
 iOG
 uoh
 iOG
-hNb
+tkz
 ebp
 iOG
 iOG
@@ -95100,7 +95222,7 @@ qHM
 bpM
 vzT
 fZJ
-iAI
+ddE
 ogq
 jki
 aJy
@@ -95907,7 +96029,7 @@ qHM
 vzT
 kNj
 vzT
-ogq
+vng
 ewd
 uHX
 jki
@@ -98525,7 +98647,7 @@ kKP
 kKP
 leM
 qCL
-hNb
+sss
 syU
 ogq
 mCH
@@ -116343,7 +116465,7 @@ lTl
 jIR
 jIR
 jIR
-bDd
+guX
 faU
 faU
 faU
@@ -135122,7 +135244,7 @@ liy
 liy
 liy
 eeN
-eeN
+wkV
 eeN
 eeN
 liy
@@ -168065,7 +168187,7 @@ pgX
 cjz
 cjz
 cjz
-cjz
+dSY
 lTl
 lTl
 lTl
@@ -217142,7 +217264,7 @@ eUJ
 bYN
 oEs
 gcv
-gcv
+pVE
 oEs
 pgX
 pgX
@@ -217947,7 +218069,7 @@ pgX
 pgX
 pgX
 oEs
-oEs
+gcv
 oEs
 oEs
 oEs
