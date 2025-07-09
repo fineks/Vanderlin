@@ -1,8 +1,8 @@
 /datum/job/cook
-	title = "Cook"
-	tutorial = "Slice, chop, and into the pot... \
-	you work closely with the innkeep to prepare meals for all the hungry mouths of Vanderlin. \
-	You've spent more nites than you can count cutting meat and vegetables until your fingers are bloody and raw, but it's honest work."
+	title = "Povar"
+	tutorial = "Кромсай руби и суй в кастрюлю. Кухонная романтика. \
+	Ты работаешь на корчмаря и обеспечиваешь его своими первоклассными услугами. \
+	Платят тут щедро, да и честная работа на барина доступна не каждому. Ты рад что стал тем кем стал."
 	flag = COOK
 	department_flag = PEASANTS
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
@@ -12,7 +12,7 @@
 	min_pq = -20
 	bypass_lastclass = TRUE
 
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_sexes = list(MALE)
 	allowed_races = list(
 		"Humen",
 		"Elf",
@@ -36,7 +36,7 @@
 	..()
 	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/cooking, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/cooking, 5, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/labor/butchering, 3, TRUE)
