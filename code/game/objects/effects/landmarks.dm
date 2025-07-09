@@ -401,6 +401,100 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	alpha = 20
 	delete_after_roundstart = FALSE
 
+//SlavTown job spawns
+
+/obj/effect/landmark/start/knyazhich
+	name = "Knyazhich"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/rinda
+	name = "Rinda"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/krisolyud_pomoshnik
+	name = "Krisolyud pomoshnik"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/sluga
+	name = "Sluga"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/poslushnik
+	name = "Poslushnik"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/ratnik
+	name = "Ratnik"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/rihtarzh
+	name = "Rihtarzh"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/strelec
+	name = "Стрелец"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/wedun
+	name = "Wedun"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/kluchnik
+	name = "Kluchnik"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/knyaz
+	name = "Knyaz"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/kupec
+	name = "Kupec"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/skornyak
+	name = "Skornyak"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/sotnik
+	name = "Sotnik"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/sovetnik
+	name = "Sovetnik"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/wedyma
+	name = "Wedyma"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/znahar
+	name = "Znahar"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/podenshikgoblin
+	name = "Podenshik Goblin"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/mogilshik
+	name = "Mogilshik"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/koval
+	name = "Koval"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/masterovoi
+	name = "Masterovoi"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/korchmar
+	name = "Korchmar"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/povar
+	name = "Povar"
+	icon_state = "arrow"
+
 //Antagonist spawns
 
 /obj/effect/landmark/start/bandit
