@@ -20,7 +20,7 @@
 	miracle = FALSE
 
 	overlay_state = "enchant_weapon"
-	invocation = "Green flame blade!"
+	invocation = "ГОВНОЖУЙСКИЙ КРИВОЖОП!"
 	invocation_type = "shout" //can be none, whisper, emote and shout
 
 	attunements = list(

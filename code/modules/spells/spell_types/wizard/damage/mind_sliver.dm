@@ -22,7 +22,7 @@
 
 	miracle = FALSE
 
-	invocation = "Steal their thoughts!"
+	invocation = "СРАКОГНИЛЬ ГЛАЗОТРАХ!"
 	invocation_type = "shout" //can be none, whisper, emote and shout
 	var/delay = 7
 

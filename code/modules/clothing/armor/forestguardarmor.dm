@@ -28,8 +28,8 @@
 	AddComponent(/datum/component/storage/concrete/grid/cloak)
 
 /obj/item/clothing/cloak/wardencloak
-	name = "warden's cloak"
-	desc = "A cloak worn by the veteran warden of the Forest Guard."
+	name = "Forest cloak"
+	desc = "A cloak worn by the forest survival expert."
 	icon = 'icons/roguetown/clothing/special/forest_guard.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/forest_guard.dmi'
 	icon_state = "wardencloak"

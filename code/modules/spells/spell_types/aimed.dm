@@ -96,7 +96,7 @@
 	action_icon_state = "fireball0"
 	school = "evocation"
 	recharge_time = 60
-	invocation = "ONI SOMA"
+	invocation = "ЁБЛОЛОМНЫЙ ПИЗДОВОРОТ!"
 	invocation_type = "shout"
 	range = 20
 	cooldown_min = 20 //10 deciseconds reduction per rank
@@ -106,7 +106,7 @@
 	active_msg = "You prepare to cast your fireball spell!"
 	deactive_msg = "You extinguish your fireball... for now."
 	active = FALSE
-	charge_invocation = list("inthe name","of god","st michael","and st george")
+	charge_invocation = list("во имя зизо","во славу имени ейного","за народ руский","и царьземлю родную")
 	releasedrain = 500
 	chargedrain = 0
 	chargetime = 50

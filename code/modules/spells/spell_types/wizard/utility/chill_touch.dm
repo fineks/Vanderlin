@@ -18,7 +18,7 @@
 
 	miracle = FALSE
 
-	invocation = "Be torn apart!"
+	invocation = "СТОЕЖОПЫЙ НЕДВИГОЁБ!"
 	invocation_type = "shout"
 
 	attunements = list(

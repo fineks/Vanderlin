@@ -19,7 +19,7 @@
 
 	miracle = FALSE
 
-	invocation = ""
+	invocation = "БЛЯДОВРОТНЫЙ ГОВНОВОРОТ!"
 	invocation_type = "shout" //can be none, whisper, emote and shout
 	attunements = list(
 		/datum/attunement/ice = 0.9

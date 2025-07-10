@@ -15,7 +15,7 @@
 	associated_skill = /datum/skill/magic/arcane
 	cost = 1
 	miracle = FALSE
-	invocation = "Stay still!"
+	invocation = "ОЧКОПЕРДЬ!"
 	invocation_type = "shout"
 	attunements = list(
 		/datum/attunement/arcyne = 0.4,

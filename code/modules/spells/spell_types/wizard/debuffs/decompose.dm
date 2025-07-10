@@ -21,8 +21,8 @@
 	miracle = FALSE
 	overlay_state = "orison"
 
-	invocation = "Return to rot."
-	invocation_type = "whisper"
+	invocation = "ГНОЙНАЯ ЖОПОГНИЛЬ!."
+	invocation_type = "shout"
 	attunements = list(
 		/datum/attunement/death = 0.3,
 	)

@@ -19,7 +19,7 @@
 	miracle = FALSE
 
 	overlay_state = "infestation"
-	invocation = "Rot, take them!"
+	invocation = "ГНИЛОТРАХИЙ ТРАХОВОРОТ!"
 	invocation_type = "shout" //can be none, whisper, emote and shout
 
 	attunements = list(
