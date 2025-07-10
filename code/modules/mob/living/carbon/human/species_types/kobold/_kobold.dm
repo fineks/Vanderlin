@@ -27,8 +27,8 @@
 	species_traits = list(NO_UNDERWEAR)
 	inherent_traits = list(TRAIT_TINY, TRAIT_DARKVISION)
 
-	specstats_m = list(STATKEY_STR = -4, STATKEY_PER = -2, STATKEY_INT = -2, STATKEY_CON = -4, STATKEY_END = 2, STATKEY_SPD = 2, STATKEY_LCK = 0)
-	specstats_f = list(STATKEY_STR = -4, STATKEY_PER = -2, STATKEY_INT = -2, STATKEY_CON = -4, STATKEY_END = 2, STATKEY_SPD = 2, STATKEY_LCK = 0)
+	specstats_m = list(STATKEY_STR = -3, STATKEY_PER = 0, STATKEY_INT = 3, STATKEY_CON = -3, STATKEY_END = 3, STATKEY_SPD = 1, STATKEY_LCK = 3)
+	specstats_f = list(STATKEY_STR = -3, STATKEY_PER = 0, STATKEY_INT = 3, STATKEY_CON = -3, STATKEY_END = 3, STATKEY_SPD = 1, STATKEY_LCK = 3)
 
 	possible_ages = NORMAL_AGES_LIST
 	use_skintones = TRUE

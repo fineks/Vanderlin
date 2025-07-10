@@ -3,7 +3,8 @@
 	tutorial = "Служение князю, и управление его хозяйством: \
 	твой главный долг. Князь положился на тебя и даровал тебе право управления над челядью. \
 	Ты превращаешь голое поле в посевы, лес в доски, детей в беспплатных рабочих, а обыкновенные вещи в деньги. \
-	Тебе предстоит наполнение казны его величества, и нахождение работы для каждого крепостного. Крыльск - не место для бездельников."
+	Тебе предстоит наполнение казны его величества, и нахождение работы для каждого крепостного. Крыльск - не место для бездельников.\
+	Ах да, ещё ты обязан собирать с них налоги. Спроси у князя сколько, либо доверься внутреннему голосу"
 	flag = STEWARD
 	department_flag = NOBLEMEN
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
@@ -15,7 +16,9 @@
 	bypass_lastclass = TRUE
 
 	allowed_sexes = list(MALE)
-	allowed_races = RACES_PLAYER_NONDISCRIMINATED
+	allowed_races = list (
+		"Humen"
+	)
 
 	outfit = /datum/outfit/job/steward
 	give_bank_account = 140
@@ -29,7 +32,6 @@
 	..()
 	H.virginity = TRUE
 
-	ADD_TRAIT(H, TRAIT_SEEPRICES, type)
 	shoes = /obj/item/clothing/shoes/simpleshoes/buckle
 	head = /obj/item/clothing/head/stewardtophat
 	shirt = /obj/item/clothing/shirt/ornate/tunic

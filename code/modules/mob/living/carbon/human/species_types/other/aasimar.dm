@@ -77,8 +77,8 @@
 		OFFSET_UNDIES = list(0,0),\
 	)
 
-	specstats_m = list(STATKEY_STR = 0, STATKEY_PER = 0, STATKEY_INT = 2, STATKEY_CON = 1, STATKEY_END = 1, STATKEY_SPD = -1, STATKEY_LCK = 0)
-	specstats_f = list(STATKEY_STR = 0, STATKEY_PER = 0, STATKEY_INT = 2, STATKEY_CON = 1, STATKEY_END = 1, STATKEY_SPD = -1, STATKEY_LCK = 0)
+	specstats_m = list(STATKEY_STR = 2, STATKEY_PER = 0, STATKEY_INT = 2, STATKEY_CON = 1, STATKEY_END = 1, STATKEY_SPD = -1, STATKEY_LCK = 0)
+	specstats_f = list(STATKEY_STR = 2, STATKEY_PER = 0, STATKEY_INT = 2, STATKEY_CON = 1, STATKEY_END = 1, STATKEY_SPD = -1, STATKEY_LCK = 0)
 
 	enflamed_icon = "widefire"
 
@@ -101,8 +101,8 @@
 		/datum/body_marking/tonage,
 	)
 
-	pain_mod = 0.9 // 10% less pain from wounds
-	bleed_mod = 0.8 // 20% less bleed rate from injuries
+	pain_mod = 0.7 // 30% less pain from wounds
+	bleed_mod = 0.6 // 40% less bleed rate from injuries
 
 /datum/species/aasimar/check_roundstart_eligible()
 	return TRUE
