@@ -14,7 +14,7 @@
 	min_pq = -10
 	bypass_lastclass = TRUE
 
-	allowed_races = RACES_PLAYER_NONHERETICAL
+	allowed_races = list("Humen","Dwarf","Elf","Half-Elf","Harpy","Triton")
 	allowed_patrons = ALL_TEMPLE_PATRONS
 
 	outfit = /datum/outfit/job/monk

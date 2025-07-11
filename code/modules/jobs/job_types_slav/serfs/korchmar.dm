@@ -13,7 +13,8 @@
 	min_pq = -10
 	bypass_lastclass = TRUE
 
-	allowed_races = RACES_PLAYER_GUARD
+	allowed_races = list("Humen","Dwarf","Elf","Tiefling","Harpy","Triton")
+
 
 	outfit = /datum/outfit/job/innkeep
 	give_bank_account = 60

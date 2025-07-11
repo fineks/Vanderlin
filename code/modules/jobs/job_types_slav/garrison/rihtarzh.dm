@@ -14,7 +14,7 @@
 	min_pq = 0
 
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = list (HUMAN)
+	allowed_races = list ("Humen")
 	allowed_ages = list(AGE_OLD, AGE_IMMORTAL)
 
 	outfit = /datum/outfit/job/dungeoneer
