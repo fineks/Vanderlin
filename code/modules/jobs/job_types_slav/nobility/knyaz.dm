@@ -3,12 +3,13 @@ GLOBAL_LIST_EMPTY(lord_titles)
 
 /datum/job/lord
 	title = "Knyaz"
+	f_title = "Knyazhna"
 	var/ruler_title = "Knyaz"
-	tutorial = "Elevated to your throne through a web of intrigue, political maneuvering, and divine sanction, you are the \
-	unquestioned authority of these lands. The Church has bestowed upon you the legitimacy of the gods themselves, and now \
-	you sit at the center of every plot, and every whisper of ambition. Every man, woman, and child may envy your power and \
-	would replace you in the blink of an eye. But remember, its not envy that keeps you in place, it is your will. Show them \
-	the error of their ways."
+	tutorial = "Твой родитель оставил этот город и престол для тебя, а сам уехал отдыхать в Царьград. Последнее что он сказал 'Я думаю ты достаточно взрослый'. \
+	С тех пор прошло уже лет эдак тридцать, или больше, или меньше. За кутежом и наслаждением властью тебе это уже позабылось \
+	однако у тебя действительно был и есть талант! Ты превратил некогда среднего пошиба село, в настоящий город защищённый скалами! \
+	Вместо людей тяжёлым трудом занимаются гоблины, и даже канализационные крысы ради общего дела научились вкалывать. Твои заслуги трудно переоценить... \
+	Но неблагодарные холопы и заграничные соседи всегда найдут в чем тебя обвинить. Так-что тебе до сих пор стоит крепко держатся за престол"
 	flag = LORD
 	department_flag = NOBLEMEN
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
