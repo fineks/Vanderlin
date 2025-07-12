@@ -10,13 +10,8 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = list(
-		"Humen"
-		"Dwarf"
-		"Tiefling"
-		"Elf"
-	)
-	allowed_sexes = list(MALE, FEMALE)
+	allowed_races = list("Humen","Dwarf","Elf","Tiefling","Kobold")
+	allowed_sexes = list(MALE)
 	allowed_ages = list(AGE_ADULT)
 
 	outfit = /datum/outfit/job/squire
