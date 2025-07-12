@@ -92,7 +92,7 @@
 
 	var/prev_real_name = H.real_name
 	var/prev_name = H.name
-	var/honorary = "Panich"
+	var/honorary = "Pann"
 	if(H.gender == FEMALE)
 		honorary = "Panna"
 	H.real_name = "[honorary] [prev_real_name]"
