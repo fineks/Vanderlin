@@ -9,8 +9,8 @@
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
 	display_order = JDO_APOTHECARY
 	faction = FACTION_TOWN
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	min_pq = 1
 	bypass_lastclass = TRUE
 
@@ -19,6 +19,7 @@
 	outfit = /datum/outfit/job/apothecary
 	give_bank_account = 100
 	cmode_music = 'sound/music/cmode/towner/CombatBeggar.ogg'
+
 
 /datum/outfit/job/apothecary
 	job_bitflag = BITFLAG_ROYALTY | BITFLAG_CONSTRUCTOR

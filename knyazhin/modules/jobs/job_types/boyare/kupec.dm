@@ -1,33 +1,25 @@
-/datum/job/merchant
-	title = "Merchant"
-	tutorial = "Born a wastrel in the dirt, you clawed your way up. Either by luck or, gods forbid, effort to earn a place in the Merchant's Guild.\
-	Now, you are either a ruthless economist or a disgraced steward from distant lands. Where you came from no longer matters.\
-	What matters now is you make sure the fools around you keep buying what you sell. Everything has a price, and you shall be the beating heart of this economy."
+/datum/job/kupec
+	title = "Kupec"
+	tutorial = "Ты прибыл в город из далёких земель. Возможно из золотых земель, а возможно из морозных гор.\
+	Здесь, в Крыльске, молвят водятся деньги. Вокруг полно диковинок, крепостные рассматривают товар давясь слюной, так и жаждая весь его скупить...\
+	Теперь дело за малым - покупаешь дёшево, продаёшь дорого, и помнить что здесь ты всего-лишь гость. И в случаи чего - тебе есть куда бежать."
 	flag = MERCHANT
 	department_flag = COMPANY
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE )
 	display_order = JDO_MERCHANT
 	faction = FACTION_TOWN
-	total_positions = 0
-	spawn_positions = 0
-	min_pq = 1
+	total_positions = 1
+	spawn_positions = 1
+	min_pq = 0
 	bypass_lastclass = TRUE
 	selection_color = "#192bc2"
 	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
 
 	allowed_races = list(
-		RACE_HUMEN,
 		RACE_ELF,
-		RACE_HALF_ELF,
 		RACE_DWARF,
 		RACE_TIEFLING,
 		RACE_DROW,
-		RACE_HALF_DROW,
-		RACE_AASIMAR,
-		RACE_RAKSHARI,
-		RACE_HOLLOWKIN,
-		RACE_TRITON,
-		RACE_HARPY,
 	)
 
 	outfit = /datum/outfit/job/merchant
@@ -40,7 +32,7 @@
 	backr = /obj/item/storage/backpack/satchel
 	backpack_contents = list(/obj/item/storage/belt/pouch/coins/veryrich = 1, /obj/item/merctoken = 1)
 	beltr = /obj/item/weapon/sword/rapier
-	belt = /obj/item/storage/belt/leather/plaquesilver
+	belt = /obj/item/storage/belt/leather/plaquegold
 	beltl = /obj/item/storage/keyring/merchant
 	armor = /obj/item/clothing/shirt/robe/merchant
 	head = /obj/item/clothing/head/chaperon/greyscale/silk/random
@@ -55,16 +47,18 @@
 		shoes = /obj/item/clothing/shoes/gladiator
 
 	ADD_TRAIT(H, TRAIT_SEEPRICES, type)
+	ADD_TRAIT(H, TRAIT_TOLERANT, type)
+	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, type)
 
 	H.change_stat(STATKEY_INT, 2)
 	H.change_stat(STATKEY_PER, 1)
-	H.change_stat(STATKEY_STR, -1)
+	H.change_stat(STATKEY_SPD, 1)
 
-	H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 5, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/stealing, 6, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/lockpicking, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/labor/mathematics, 5, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/stealing, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/lockpicking, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/labor/mathematics, 6, TRUE)

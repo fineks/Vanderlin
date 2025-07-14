@@ -141,6 +141,8 @@ GLOBAL_VAR_INIT(OOC_COLOR, normal_ooc_colour)//If this is null, use the CSS for 
 	var/chat_color = "#c5c5c5"
 	var/msg_to_send = ""
 	var/admin_message_color = prefs.ooccolor
+	if(admin_message_color == "#000000")
+		admin_message_color = "#FFFFFF"
 
 	for(var/client/C in GLOB.clients)
 		var/real_key = C.holder ? "([key])" : ""
