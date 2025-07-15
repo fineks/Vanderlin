@@ -13,7 +13,7 @@
 	min_pq = 0
 	bypass_lastclass = TRUE
 
-	allowed_races = RACES_PLAYER_ALL
+	allowed_races = list("Humen","Dwarf","Elf")
 
 	outfit = /datum/outfit/job/armorsmith
 	display_order = JDO_ARMORER

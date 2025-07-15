@@ -1,5 +1,6 @@
 /atom/MouseEntered(location,control,params)
 	. = ..()
+	params = string2listofvars(params)
 	if(!nomouseover && name && ismob(usr))
 		handle_mouseover(location, control, params)
 	SEND_SIGNAL(usr, COMSIG_ATOM_MOUSE_ENTERED, src, params)

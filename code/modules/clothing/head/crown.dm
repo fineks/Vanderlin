@@ -22,7 +22,7 @@
 
 
 /obj/item/clothing/head/crown/serpcrown
-	name = "crown of Vanderlin"
+	name = "crown of Krilsk"
 	desc = "Heavy is the weight of the crown, and even heavier the responsibility it infers to its wearer."
 	icon_state = "serpcrown"
 	sellprice = VALUE_EXTREME
@@ -43,8 +43,8 @@
 	qdel(src) //Anti-stall
 
 /obj/item/clothing/head/crown/serpcrown/surplus
-	name = "crown"
-	desc = "A replacement for the Crown of Vanderlin, every bit as valid as proof of sovereignity as the original."
+	name = "crown of Krolsk"
+	desc = "A replacement for the Crown of Krilsk, every bit as valid as proof of sovereignity as the original... Wait, 'Krolsk'? really?"
 	icon_state = "serpcrowno"
 	sellprice = VALUE_GOLD_ITEM
 
@@ -74,14 +74,16 @@
 	desc = "A shining gold circlet, with a mysterious blue insert. You feel more energetic while near it..."
 	icon_state = "sleepcirclet"
 	item_state = "sleepcirclet"
-	sellprice = VALUE_MAGIC_ITEM_WEAK
+	sellprice = VALUE_MAGIC_ITEM_STRONG
 
 /obj/item/clothing/head/crown/circlet/sleepless/equipped(mob/user, slot)
 	. = ..()
 	if ((slot & ITEM_SLOT_HEAD) && istype(user))
 		ADD_TRAIT(user, TRAIT_NOSLEEP,"Fatal Insomnia")
+		ADD_TRAIT(user, TRAIT_NOSTAMINA,"Indefatigable")
 	else
 		REMOVE_TRAIT(user, TRAIT_NOSLEEP,"Fatal Insomnia")
+		REMOVE_TRAIT(user, TRAIT_NOSTAMINA,"Indefatigable")
 
 //............... Stink Immunity Circlet ............... //
 /obj/item/clothing/head/crown/circlet/stink
@@ -95,5 +97,7 @@
 	. = ..()
 	if ((slot & ITEM_SLOT_HEAD) && istype(user))
 		ADD_TRAIT(user, TRAIT_NOSTINK,"Dead Nose")
+		ADD_TRAIT(user, TRAIT_NASTY_EATER ,"Inhumen Digestion")
 	else
 		REMOVE_TRAIT(user, TRAIT_NOSTINK,"Dead Nose")
+		REMOVE_TRAIT(user, TRAIT_NASTY_EATER ,"Inhumen Digestion")

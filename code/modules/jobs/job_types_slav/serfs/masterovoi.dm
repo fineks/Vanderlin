@@ -27,6 +27,7 @@
 	..()
 	H.adjust_skillrank(/datum/skill/combat/axesmaces, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, pick(2,3), TRUE)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, pick(3,3,3,4), TRUE) // Лондон
 	H.adjust_skillrank(/datum/skill/combat/unarmed, pick(2,3), TRUE)
 	H.adjust_skillrank(/datum/skill/labor/lumberjacking, pick(1,1,2), TRUE)
 	H.adjust_skillrank(/datum/skill/craft/masonry, 3, TRUE)

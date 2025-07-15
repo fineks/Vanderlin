@@ -14,8 +14,8 @@
 	min_pq = 0
 
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = list (HUMAN)
-	allowed_ages = list(AGE_OLD, AGE_IMMORTAL)
+	allowed_races = list ("Humen")
+	allowed_ages = list(AGE_OLD, AGE_MIDDLEAGED AGE_IMMORTAL)
 
 	outfit = /datum/outfit/job/dungeoneer
 	give_bank_account = 50

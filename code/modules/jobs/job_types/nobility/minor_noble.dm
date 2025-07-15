@@ -8,8 +8,8 @@
 	department_flag = NOBLEMEN
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
 	faction = FACTION_TOWN
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	min_pq = 1
 
 	allowed_sexes = list(MALE, FEMALE)
@@ -19,6 +19,7 @@
 	apprentice_name = "Servant"
 	give_bank_account = 60
 	noble_income = 16
+
 
 /datum/outfit/job/noble
 	job_bitflag = BITFLAG_ROYALTY

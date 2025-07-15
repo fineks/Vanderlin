@@ -96,45 +96,46 @@
 		to_chat(user, "<span class='warning'>[src] is empty!</span>")
 		return
 	if(user.used_intent.type == INTENT_SPLASH)
-		var/R
-		M.visible_message("<span class='danger'>[user] splashes the contents of [src] onto [M]!</span>", \
-						"<span class='danger'>[user] splashes the contents of [src] onto you!</span>")
-		if(reagents)
-			for(var/datum/reagent/A as anything in reagents.reagent_list)
-				R += "[A] ([num2text(A.volume)]),"
-
-		if(reagents?.reagent_list && user)
-			log_combat(user, M, "splashed (thrown) [english_list(reagents.reagent_list)]")
-			message_admins("[ADMIN_LOOKUPFLW(user)] splashed (thrown) [english_list(reagents.reagent_list)] on [M] at [ADMIN_VERBOSEJMP(M)].")
-		reagents.reaction(M, TOUCH)
-		chem_splash(M.loc, 2, list(reagents))
-		playsound(M.loc, pick('sound/foley/water_land1.ogg','sound/foley/water_land2.ogg', 'sound/foley/water_land3.ogg'), 100, FALSE)
-		log_combat(user, M, "splashed", R)
+		splash_mob(M, user)
 		return
 	if(user.used_intent.type == INTENT_POUR)
-		if(!canconsume(M, user))
+		pour(M, user)
+		return
+
+/obj/item/reagent_containers/glass/proc/splash_mob(mob/living/M, mob/living/user)
+	var/R
+	M.visible_message("<span class='danger'>[user] splashes the contents of [src] onto [M]!</span>", \
+					"<span class='danger'>[user] splashes the contents of [src] onto you!</span>")
+	if(reagents)
+		for(var/datum/reagent/A as anything in reagents.reagent_list)
+			R += "[A] ([num2text(A.volume)]),"
+
+	if(reagents?.reagent_list && user)
+		log_combat(user, M, "splashed (thrown) [english_list(reagents.reagent_list)]")
+		message_admins("[ADMIN_LOOKUPFLW(user)] splashed (thrown) [english_list(reagents.reagent_list)] on [M] at [ADMIN_VERBOSEJMP(M)].")
+	reagents.reaction(M, TOUCH)
+	chem_splash(M.loc, 2, list(reagents))
+	playsound(M.loc, pick('sound/foley/water_land1.ogg','sound/foley/water_land2.ogg', 'sound/foley/water_land3.ogg'), 100, FALSE)
+	log_combat(user, M, "splashed", R)
+
+/obj/item/reagent_containers/glass/proc/pour(mob/living/M, mob/living/user)
+	if(!canconsume(M, user))
+		return
+	if(M != user)
+		M.visible_message("<span class='danger'>[user] attempts to feed [M] something.</span>", \
+					"<span class='danger'>[user] attempts to feed you something.</span>")
+		if(!do_after(user, 3 SECONDS, M))
 			return
-		if(M != user)
-			M.visible_message("<span class='danger'>[user] attempts to feed [M] something.</span>", \
-						"<span class='danger'>[user] attempts to feed you something.</span>")
-			if(!do_after(user, 3 SECONDS, M))
-				return
-			if(!reagents?.total_volume)
-				return // The drink might be empty after the delay, such as by spam-feeding
-			M.visible_message(span_danger("[user] feeds [M] something."), \
-						span_danger("[user] feeds you something."))
-			log_combat(user, M, "fed", reagents.log_list())
-		else
-			// check to see if we're a noble drinking soup
-			if(ishuman(user) && istype(src, /obj/item/reagent_containers/glass/bowl))
-				var/mob/living/carbon/human/human_user = user
-				if(human_user.is_noble()) // egads we're an unmannered SLOB
-					human_user.add_stress(/datum/stressevent/noble_bad_manners)
-					if(prob(25))
-						to_chat(human_user, span_red("I've got better manners than this..."))
-			to_chat(user, span_notice("I swallow a gulp of [src]."))
-		addtimer(CALLBACK(reagents, TYPE_PROC_REF(/datum/reagents, trans_to), M, min(amount_per_transfer_from_this,5), TRUE, TRUE, FALSE, user, FALSE, INGEST), 5)
-		playsound(M.loc, pick(drinksounds), 100, TRUE)
+		if(!reagents?.total_volume)
+			return // The drink might be empty after the delay, such as by spam-feeding
+		M.visible_message(span_danger("[user] feeds [M] something."), \
+					span_danger("[user] feeds you something."))
+		log_combat(user, M, "fed", reagents.log_list())
+	else
+		// check to see if we're a noble drinking soup
+		to_chat(user, span_notice("I swallow a gulp of [src]."))
+	addtimer(CALLBACK(reagents, TYPE_PROC_REF(/datum/reagents, trans_to), M, min(amount_per_transfer_from_this,5), TRUE, TRUE, FALSE, user, FALSE, INGEST), 5)
+	playsound(M.loc, pick(drinksounds), 100, TRUE)
 
 /obj/item/reagent_containers/glass/attack_obj(obj/target, mob/living/user)
 	if(user.used_intent.type == INTENT_GENERIC)
@@ -193,22 +194,27 @@
 		return
 
 	if(reagents.total_volume && user.used_intent.type == INTENT_SPLASH)
-		user.visible_message(span_danger("[user] splashes the contents of [src] onto [target]"), \
+		splash_obj(target, user)
+
+/obj/item/reagent_containers/glass/proc/splash_obj(obj/target, mob/living/user)
+	user.visible_message(span_danger("[user] splashes the contents of [src] onto [target]"), \
 							span_notice("I splash the contents of [src] onto [target]"))
-		reagents.reaction(target, TOUCH)
-		playsound(target.loc, pick('sound/foley/water_land1.ogg','sound/foley/water_land2.ogg', 'sound/foley/water_land3.ogg'), 100, FALSE)
-		chem_splash(target.loc, 2, list(reagents))
+	reagents.reaction(target, TOUCH)
+	playsound(target.loc, pick('sound/foley/water_land1.ogg','sound/foley/water_land2.ogg', 'sound/foley/water_land3.ogg'), 100, FALSE)
+	chem_splash(target.loc, 2, list(reagents))
 
 /obj/item/reagent_containers/glass/attack_turf(turf/T, mob/living/user)
 	if(spillable && reagents.total_volume && user.used_intent.type == INTENT_SPLASH)
-		//catch for walls
-		var/turf/newT = T
-		while(istype(T, /turf/closed) && newT != user.loc)
-			newT = get_step(newT, get_dir(newT, user.loc))
-		reagents.reaction(T, TOUCH)
-		chem_splash(newT, 2, list(reagents))
-		playsound(newT, pick('sound/foley/water_land1.ogg','sound/foley/water_land2.ogg', 'sound/foley/water_land3.ogg'), 100, FALSE)
-		user.visible_message(span_notice("[user] splashes the contents of [src] onto \the [T]!"), \
+		splash_turf(T, user)
+
+/obj/item/reagent_containers/glass/proc/splash_turf(turf/T, mob/living/user)
+	var/turf/newT = T
+	while(istype(T, /turf/closed) && newT != user.loc)
+		newT = get_step(newT, get_dir(newT, user.loc))
+	reagents.reaction(T, TOUCH)
+	chem_splash(newT, 2, list(reagents))
+	playsound(newT, pick('sound/foley/water_land1.ogg','sound/foley/water_land2.ogg', 'sound/foley/water_land3.ogg'), 100, FALSE)
+	user.visible_message(span_notice("[user] splashes the contents of [src] onto \the [T]!"), \
 								span_notice("I splash the contents of [src] onto \the [T]."))
 
 /obj/item/reagent_containers/glass/afterattack(obj/target, mob/user, proximity)

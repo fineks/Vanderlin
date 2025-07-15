@@ -9,8 +9,8 @@
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
 	display_order = JDO_MAGICIAN
 	faction = FACTION_TOWN
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	min_pq = 6
 	bypass_lastclass = TRUE
 
@@ -22,6 +22,7 @@
 	give_bank_account = 120
 	cmode_music = 'sound/music/cmode/nobility/CombatCourtMagician.ogg'
 	magic_user = TRUE
+
 
 /datum/job/magician/New()
 	if(prob(5))

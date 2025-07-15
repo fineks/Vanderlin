@@ -14,7 +14,7 @@
 
 	allowed_ages = list(AGE_ADULT)
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_PLAYER_NONDISCRIMINATED
+	allowed_races = list("Humen","Dwarf","Elf","Dark Elf","Triton")
 
 	outfit = /datum/outfit/job/courtphys
 	give_bank_account = 100

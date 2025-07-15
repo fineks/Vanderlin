@@ -16,7 +16,7 @@
 	bypass_lastclass = TRUE
 
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_PLAYER_ALL
+	allowed_races = list("Humen","Dwarf","Elf","Harpy","Dark Elf")
 	allowed_patrons = list(/datum/patron/divine/zizo)
 
 	outfit = /datum/outfit/job/undertaker

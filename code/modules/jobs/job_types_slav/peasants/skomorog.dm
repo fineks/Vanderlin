@@ -1,9 +1,8 @@
 /datum/job/jester
-	title = "Jester"
-	tutorial = "The Grenzelhofts were known for their Jesters, wisemen with a tongue just as sharp as their wit. \
-		You command a position of a fool, envious of the position your superiors have upon you. \
-		Your cheap tricks and illusions of intelligence will only work for so long, \
-		and someday you'll find yourself at the end of something sharper than you."
+	title = "Skomoroh"
+	tutorial = "Особенная роль за триумфы. \
+		Ты скоморох присланный самим царём!Тебе можно что угодно! Но главная твоя обязанность - смешить! \
+		Пускай тебе и можно всё, но есть шанс что тебе сломают нос. Шути достаточно смешно и остро дабы твои обидчики умерли со смеху!"
 	flag = JESTER
 	department_flag = PEASANTS
 	display_order = JDO_JESTER
@@ -11,10 +10,10 @@
 	faction = FACTION_TOWN
 	total_positions = 1
 	spawn_positions = 1
-	min_pq = 5
+	min_pq = 0
 	bypass_lastclass = TRUE
 
-	allowed_races = RACES_PLAYER_ALL
+	allowed_races = list("Humen","Dwarf","Elf","Dark Elf","Tiefling","Harpy","Triton","Kobold")
 
 
 	outfit = /datum/outfit/job/jester
@@ -31,18 +30,18 @@
 	beltl = /obj/item/storage/belt/pouch
 	head = /obj/item/clothing/head/jester
 	neck = /obj/item/clothing/neck/coif
-	H.adjust_skillrank(/datum/skill/combat/knives, pick(1,2,3,4,5), TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, pick(1,2,3,4,5,6), TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, pick(1,2,3,4,5,6), TRUE)
 	H.adjust_skillrank(/datum/skill/misc/riding, pick(1,2,3,4,5,6), TRUE)
 	H.adjust_skillrank(/datum/skill/craft/bombs, pick(1,2,3,4,5,6), TRUE)
 	H.adjust_skillrank(/datum/skill/labor/fishing, pick(1,2,3,4,5,6), TRUE)
-	H.adjust_skillrank(/datum/skill/combat/wrestling, pick(1,2,3), TRUE)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, pick(1,2,3,4,5,6), TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, pick(1,2,3,4,5,6), TRUE)
-	H.adjust_skillrank(/datum/skill/misc/sneaking, pick(1,2,3,4,5), TRUE)
-	H.adjust_skillrank(/datum/skill/misc/stealing, pick(1,2,3,4,5), TRUE)
-	H.adjust_skillrank(/datum/skill/misc/lockpicking, pick(1,2,3,4,5), TRUE)
-	H.adjust_skillrank(/datum/skill/misc/climbing, pick(4,5), TRUE) // Pirouette, but falling and hurting yourself IS pretty funny.
-	H.adjust_skillrank(/datum/skill/misc/athletics, pick(4,4,4,4,5), TRUE)
+	H.adjust_skillrank(/datum/skill/misc/sneaking, pick(1,2,3,4,5,6), TRUE)
+	H.adjust_skillrank(/datum/skill/misc/stealing, pick(1,2,3,4,5,6), TRUE)
+	H.adjust_skillrank(/datum/skill/misc/lockpicking, pick(1,2,3,4,5,6), TRUE)
+	H.adjust_skillrank(/datum/skill/misc/climbing, pick(4,5,6), TRUE) // Pirouette, but falling and hurting yourself IS pretty funny.
+	H.adjust_skillrank(/datum/skill/misc/athletics, pick(4,4,4,4,5,6), TRUE)
 	H.adjust_skillrank(/datum/skill/misc/music, pick(1,2,3,4,5,6), TRUE)
 	H.adjust_skillrank(/datum/skill/craft/cooking, pick(1,2,3,4,5,6), TRUE)
 	H.adjust_skillrank(/datum/skill/combat/firearms, pick(1,2,3,4,5,6), TRUE)

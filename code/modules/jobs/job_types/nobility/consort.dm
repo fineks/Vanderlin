@@ -9,7 +9,7 @@
 	display_order = JDO_CONSORT
 	faction = FACTION_TOWN
 	total_positions = 0
-	spawn_positions = 1
+	spawn_positions = 0
 	min_pq = 6
 	bypass_lastclass = TRUE
 

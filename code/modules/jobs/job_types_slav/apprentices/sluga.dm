@@ -12,9 +12,8 @@
 	min_pq = -20
 	bypass_lastclass = TRUE
 
-	allowed_ages = list(AGE_CHILD, AGE_ADULT, AGE_MIDDLEAGED AGE_IMMORTAL)
+	allowed_races = list("Humen","Dwarf","Elf","Dark Elf","Tiefling","Harpy","Triton","Kobold")
 	allowed_sexes = list(MALE)
-	allowed_races = RACES_PLAYER_ALL
 
 	outfit = /datum/outfit/job/servant
 	give_bank_account = TRUE

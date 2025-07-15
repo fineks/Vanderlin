@@ -495,6 +495,18 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Povar"
 	icon_state = "arrow"
 
+/obj/effect/landmark/start/varyag
+	name = "Varyag"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/chumak
+	name = "Chumak"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/skomoroh
+	name = "Skomoroh"
+	icon_state = "arrow"
+
 //Antagonist spawns
 
 /obj/effect/landmark/start/bandit

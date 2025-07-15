@@ -462,7 +462,11 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 
 	var/width = widthPerColumn
 
-	var/HTML = "<center>"
+	var/HTMLhead = "<meta charset='UTF-8'>"
+
+	var/list/HTML = list()
+	HTML+="<center>"
+
 	if(!length(SSjob.joinable_occupations))
 		HTML += "<center><a href='?_src_=prefs;preference=job;task=close'>Готово</a></center><br>" // Easier to press up here.
 	else
@@ -627,7 +631,8 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 
 	var/datum/browser/noclose/popup = new(user, "mob_occupation", "<div align='center'>Выбор Класса</div>", width, height)
 	popup.set_window_options(can_close = FALSE)
-	popup.set_content(HTML)
+	popup.set_head_content(HTMLhead)
+	popup.set_content(HTML.Join())
 	popup.open(FALSE)
 
 /datum/preferences/proc/SetJobPreferenceLevel(datum/job/job, level)

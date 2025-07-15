@@ -74,7 +74,7 @@
 	)
 
 	specstats_m = list(STATKEY_STR = 1, STATKEY_PER = 0, STATKEY_INT = 0, STATKEY_CON = 1, STATKEY_END = 2, STATKEY_SPD = 0, STATKEY_LCK = 1)
-	specstats_f = list(STATKEY_STR = 0, STATKEY_PER = 0, STATKEY_INT = 1, STATKEY_CON = 1, STATKEY_END = 2, STATKEY_SPD = 1, STATKEY_LCK = 1)
+	specstats_f = list(STATKEY_STR = 0, STATKEY_PER = 0, STATKEY_INT = 0, STATKEY_CON = 1, STATKEY_END = 2, STATKEY_SPD = 1, STATKEY_LCK = 2)
 
 	enflamed_icon = "widefire"
 

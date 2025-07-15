@@ -70,6 +70,7 @@ export const DmTarget = new Juke.Target({
     "html/**",
     "icons/**",
     "interface/**",
+    "knyazhin/**",
     `${DME_NAME}.dme`,
   ],
   outputs: [`${DME_NAME}.dmb`, `${DME_NAME}.rsc`],
