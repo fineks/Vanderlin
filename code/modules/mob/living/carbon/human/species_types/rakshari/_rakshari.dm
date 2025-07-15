@@ -22,7 +22,7 @@
 	\n\n\
 	THIS IS A DISCRIMINATED SPECIES. EXPECT A MORE DIFFICULT EXPERIENCE. PLAY AT YOUR OWN RISK."
 
-	skin_tone_wording = "Tribal Identity"
+	skin_tone_wording = "Племенная Принадлежность"
 	use_skintones = TRUE
 	default_color = "FFFFFF"
 

@@ -167,7 +167,7 @@ GLOBAL_LIST_EMPTY(patreon_races)
 	var/use_skintones = FALSE
 
 	/// Wording for skin tone on examine and on character setup
-	var/skin_tone_wording = "Skin Tone"
+	var/skin_tone_wording = "Тон Кожи"
 
 	/// List of bodypart features of this species
 	var/list/bodypart_features

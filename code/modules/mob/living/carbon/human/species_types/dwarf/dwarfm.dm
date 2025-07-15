@@ -25,7 +25,7 @@
 	Despite their cultural praise, a long-standing fued remains between dwarves and elves \
 	stemming from old industrial practices. Dwarves hold a strong alliance with humenkind."
 
-	skin_tone_wording = "Ore Attunement"
+	skin_tone_wording = "Слияние с Рудой"
 
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR, HAIR, FACEHAIR, LIPS, YOUNGBEARD, STUBBLE, OLDGREY)

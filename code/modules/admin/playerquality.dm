@@ -15,24 +15,24 @@
 		return the_pq
 	else
 		if(the_pq >= 100)
-			return "<span style='color: #00ff00;'>Legendary</span>"
+			return "<span style='color: #00ff00;'>Легендарное</span>"
 		if(the_pq >= 70)
-			return "<span style='color: #74cde0;'>Exceptional</span>"
+			return "<span style='color: #74cde0;'>Исключительное</span>"
 		if(the_pq >= 30)
-			return "<span style='color: #47b899;'>Great</span>"
+			return "<span style='color: #47b899;'>Отличное</span>"
 		if(the_pq >= 5)
-			return "<span style='color: #58a762;'>Good</span>"
+			return "<span style='color: #58a762;'>Хорошее</span>"
 		if(the_pq >= -4)
-			return "Normal"
+			return "Обычное"
 		if(the_pq >= -30)
-			return "<span style='color: #be6941;'>Poor</span>"
+			return "<span style='color: #be6941;'>Плохое</span>"
 		if(the_pq >= -70)
-			return "<span style='color: #cd4232;'>Terrible</span>"
+			return "<span style='color: #cd4232;'>Ужасное</span>"
 		if(the_pq >= -99)
-			return "<span style='color: #e2221d;'>Abysmal</span>"
+			return "<span style='color: #e2221d;'>Ничтожное</span>"
 		if(the_pq <= -100)
-			return "<span style='color: #ff00ff;'>Shitter</span>"
-		return "Normal"
+			return "<span style='color: #ff00ff;'>Говнюк</span>"
+		return "Обычное"
 
 /proc/adjust_playerquality(amt, key, admin, reason)
 	var/curpq = 0

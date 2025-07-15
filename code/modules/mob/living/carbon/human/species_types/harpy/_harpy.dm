@@ -14,7 +14,7 @@
 	Their serene songs and blissful music can be heard echoing far below, guiding travelers and thieves both to respite... or treasure. For as lifted into grace as they might be, these 'magpies' earn such a nickname from Matthiosan greed and love for anything that shines. \
 	Yet if one can work past that distrust and compensate them well, harpies make for unparalleled couriers. "
 
-	skin_tone_wording = "Heritage"
+	skin_tone_wording = "Наследие"
 	default_color = "FFFFFF"
 
 	species_traits = list(EYECOLOR, HAIR, FACEHAIR, LIPS, STUBBLE, OLDGREY)

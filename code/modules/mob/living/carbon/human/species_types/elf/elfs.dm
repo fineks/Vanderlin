@@ -27,7 +27,7 @@
 	and pillaging of natural resources within the former snow-elf territory. \n\
 	To elves, it was the greatest signifier of disrespect for those lost. "
 
-	skin_tone_wording = "Tribal Identity"
+	skin_tone_wording = "Племенная Принадлежность"
 
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,OLDGREY)
