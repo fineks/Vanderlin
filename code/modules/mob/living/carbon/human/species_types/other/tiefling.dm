@@ -29,7 +29,7 @@
 	\n\n\
 	THIS IS A DISCRIMINATED SPECIES. EXPECT A MORE DIFFICULT EXPERIENCE. <B>NOBLES EVEN MORE SO.</B> PLAY AT YOUR OWN RISK."
 
-	skin_tone_wording = "Progenitor"
+	skin_tone_wording = "Прародитель"
 
 	exotic_bloodtype = /datum/blood_type/human/tiefling
 

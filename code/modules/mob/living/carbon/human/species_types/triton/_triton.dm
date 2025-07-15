@@ -31,7 +31,7 @@
 
 	possible_ages = NORMAL_AGES_LIST
 
-	skin_tone_wording = "Tribal Identity"
+	skin_tone_wording = "Племенная Принадлежность"
 	default_color = "9cc2e2"
 	use_skintones = TRUE
 

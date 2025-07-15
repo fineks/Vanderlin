@@ -35,5 +35,5 @@ GLOBAL_LIST_INIT(special_roles_rogue, list(
 ))
 
 //Job defines for what happens when you fail to qualify for any job during job selection
-#define BERANDOMJOB "Be Random Role"
-#define RETURNTOLOBBY 	"Return to Lobby"
+#define BERANDOMJOB "Быть Случайной Ролью"
+#define RETURNTOLOBBY 	"Вернуться в Лобби"

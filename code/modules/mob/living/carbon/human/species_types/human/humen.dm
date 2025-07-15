@@ -21,7 +21,7 @@
 	Humens tend to find fortune easier than the other species, and are so diverse that no other trait \
 	are dominant in their species..."
 
-	skin_tone_wording = "Ancestry"
+	skin_tone_wording = "Происхождение"
 
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR, HAIR, FACEHAIR, LIPS, STUBBLE, OLDGREY)

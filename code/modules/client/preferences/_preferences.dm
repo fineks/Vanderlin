@@ -227,17 +227,17 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	// FIRST ROW
 	dat += "<tr>"
 	dat += "<td style='width:33%;text-align:left'>"
-	dat += "<a style='white-space:nowrap;' href='?_src_=prefs;preference=changeslot;'>Change Character</a>"
+	dat += "<a style='white-space:nowrap;' href='?_src_=prefs;preference=changeslot;'>Изменить Персонажа</a>"
 	dat += "</td>"
 
 
 	dat += "<td style='width:33%;text-align:center'>"
 	if(SStriumphs.triumph_buys_enabled)
-		dat += "<a style='white-space:nowrap;' href='?_src_=prefs;preference=triumph_buy_menu'>Triumph Buy</a>"
+		dat += "<a style='white-space:nowrap;' href='?_src_=prefs;preference=triumph_buy_menu'>Купить за Триумфы</a>"
 	dat += "</td>"
 
 	dat += "<td style='width:33%;text-align:right'>"
-	dat += "<a href='?_src_=prefs;preference=keybinds;task=menu'>Keybinds</a>"
+	dat += "<a href='?_src_=prefs;preference=keybinds;task=menu'>Сочетания клавиш</a>"
 	dat += "</td>"
 	dat += "</tr>"
 
@@ -248,7 +248,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	dat += "</td>"
 
 	dat += "<td style='width:33%;text-align:center'>"
-	dat += "<a href='?_src_=prefs;preference=job;task=menu'>Class Selection</a>"
+	dat += "<a href='?_src_=prefs;preference=job;task=menu'>Выбор Класса</a>"
 	dat += "</td>"
 
 	dat += "<td style='width:33%;text-align:right'>"
@@ -262,7 +262,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	dat += "</td>"
 
 	dat += "<td style='width:33%;text-align:center'>"
-	dat += "<a href='?_src_=prefs;preference=antag;task=menu'>Villain Selection</a>"
+	dat += "<a href='?_src_=prefs;preference=antag;task=menu'>Выбор Злодея</a>"
 	dat += "</td>"
 
 	dat += "<td style='width:33%;text-align:right'>"
@@ -276,7 +276,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	dat += "</td>"
 
 	dat += "<td style='width:33%;text-align:center'>"
-	dat += "<a href='?_src_=prefs;preference=triumphs;task=menu'><b>TRIUMPHS:</b></a> [user.get_triumphs() ? "\Roman [user.get_triumphs()]" : "None"]"
+	dat += "<a href='?_src_=prefs;preference=triumphs;task=menu'><b>ТРИУМФЫ:</b></a> [user.get_triumphs() ? "\Roman [user.get_triumphs()]" : "Нет"]"
 	dat += "</td>"
 
 	dat += "<td style='width:33%;text-align:right'>"
@@ -292,45 +292,45 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	dat += "<td width=40% valign='top'>"
 
 	//-----------START OF IDENT TABLE-----------//
-	dat += "<h2 style='padding-left: 4px'>Identity</h2>"
+	dat += "<h2 style='padding-left: 4px'>Личность</h2>"
 	dat += "<table width='100%'><tr><td width='75%' valign='top'>"
-	dat += "<a style='white-space:nowrap; padding: 0px' href='?_src_=prefs;preference=randomiseappearanceprefs;'>Randomize Character</a>"
+	dat += "<a style='white-space:nowrap; padding: 0px' href='?_src_=prefs;preference=randomiseappearanceprefs;'>Случайный Персонаж</a>"
 	dat += "<br>"
-	dat += "<b>Name:</b> "
+	dat += "<b>Имя:</b> "
 	if(check_nameban(user.ckey))
 		dat += "<a href='?_src_=prefs;preference=name;task=input'>NAMEBANNED</a><BR>"
 	else
 		dat += "<a href='?_src_=prefs;preference=name;task=input'>[real_name]</a> <a href='?_src_=prefs;preference=name;task=random'>\[R\]</a>"
 
 	dat += "<BR>"
-	dat += "<b>Species:</b> <a href='?_src_=prefs;preference=species;task=input'>[pref_species.name]</a>[spec_check() ? "" : " (!)"]<BR>"
+	dat += "<b>Раса:</b> <a href='?_src_=prefs;preference=species;task=input'>[pref_species.name]</a>[spec_check() ? "" : " (!)"]<BR>"
 
 	if(!(AGENDER in pref_species.species_traits))
 		var/dispGender
 		if(gender == MALE)
-			dispGender = "Man"
+			dispGender = "Мужчина"
 		else if(gender == FEMALE)
-			dispGender = "Woman"
+			dispGender = "Женщина"
 		else
-			dispGender = "Other"
-		dat += "<b>Sex:</b> <a href='?_src_=prefs;preference=gender'>[dispGender]</a><BR>"
+			dispGender = "Другое"
+		dat += "<b>Пол:</b> <a href='?_src_=prefs;preference=gender'>[dispGender]</a><BR>"
 		if(randomise[RANDOM_BODY] || randomise[RANDOM_BODY_ANTAG]) //doesn't work unless random body
 			dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_GENDER]'>Always Random Gender: [(randomise[RANDOM_GENDER]) ? "Yes" : "No"]</A>"
 			dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_GENDER_ANTAG]'>When Antagonist: [(randomise[RANDOM_GENDER_ANTAG]) ? "Yes" : "No"]</A>"
 
 	if(AGE_IMMORTAL in pref_species.possible_ages)
-		dat += "<b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'>[AGE_IMMORTAL]</a><BR>"
+		dat += "<b>Возраст:</b> <a href='?_src_=prefs;preference=age;task=input'>[AGE_IMMORTAL]</a><BR>"
 	else
-		dat += "<b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'>[age]</a><BR>"
+		dat += "<b>Возраст:</b> <a href='?_src_=prefs;preference=age;task=input'>[age]</a><BR>"
 
-	dat += "<b>Flaw:</b> <a href='?_src_=prefs;preference=charflaw;task=input'>[charflaw]</a><BR>"
+	dat += "<b>Изъян:</b> <a href='?_src_=prefs;preference=charflaw;task=input'>[charflaw]</a><BR>"
 	var/datum/faith/selected_faith = GLOB.faithlist[selected_patron?.associated_faith]
-	dat += "<b>Faith:</b> <a href='?_src_=prefs;preference=faith;task=input'>[selected_faith?.name || "FUCK!"]</a><BR>"
-	dat += "<b>Patron:</b> <a href='?_src_=prefs;preference=patron;task=input'>[selected_patron?.name || "FUCK!"]</a><BR>"
-	dat += "<b>Family:</b> <a href='?_src_=prefs;preference=family'>[family ? family : "None"]</a><BR>"
+	dat += "<b>Вера:</b> <a href='?_src_=prefs;preference=faith;task=input'>[selected_faith?.name || "FUCK!"]</a><BR>"
+	dat += "<b>Покровитель:</b> <a href='?_src_=prefs;preference=patron;task=input'>[selected_patron?.name || "FUCK!"]</a><BR>"
+	dat += "<b>Семья:</b> <a href='?_src_=prefs;preference=family'>[family ? family : "None"]</a><BR>"
 	if(family == FAMILY_FULL || family == FAMILY_NEWLYWED)
-		dat += "<b>Preferred Spouse:</b> <a href='?_src_=prefs;preference=setspouse'>[setspouse ? setspouse : "None"]</a><BR>"
-	dat += "<b>Dominance:</b> <a href='?_src_=prefs;preference=domhand'>[domhand == 1 ? "Left-handed" : "Right-handed"]</a><BR>"
+		dat += "<b>Предпочтитаемый Супруг:</b> <a href='?_src_=prefs;preference=setspouse'>[setspouse ? setspouse : "None"]</a><BR>"
+	dat += "<b>Ведущая Рука:</b> <a href='?_src_=prefs;preference=domhand'>[domhand == 1 ? "Left-handed" : "Right-handed"]</a><BR>"
 	dat += "</tr></table>"
 	//-----------END OF IDENT TABLE-----------//
 
@@ -340,7 +340,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	dat += "<td width=20% valign='top'>"
 	// Rightmost column, 40% width
 	dat += "<td width=40% valign='top'>"
-	dat += "<h2 style='padding-left: 4px'>Body</h2>"
+	dat += "<h2 style='padding-left: 4px'>Тело</h2>"
 
 	//-----------START OF BODY TABLE-----------
 	dat += "<table width='100%'><tr><td width='1%' valign='top'>"
@@ -351,22 +351,22 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 		//dat += APPEARANCE_CATEGORY_COLUMN
 		var/skin_tone_wording = pref_species.skin_tone_wording // Both the skintone names and the word swap here is useless fluff
 
-		dat += "<b>[skin_tone_wording]: </b><a href='?_src_=prefs;preference=s_tone;task=input'>Change </a>"
+		dat += "<b>[skin_tone_wording]: </b><a href='?_src_=prefs;preference=s_tone;task=input'>Изменить </a>"
 		//dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_SKIN_TONE]'>[(randomise[RANDOM_SKIN_TONE]) ? "Lock" : "Unlock"]</A>"
 		dat += "<br>"
 
-	dat += "<b>Voice Color: </b><a href='?_src_=prefs;preference=voice;task=input'>Change</a>"
-	dat += "<br><b>Accent:</b> <a href='?_src_=prefs;preference=selected_accent;task=input'>[selected_accent]</a>"
+	dat += "<b>Цвет Голоса: </b><a href='?_src_=prefs;preference=voice;task=input'>Изменить</a>"
+	dat += "<br><b>Акцент:</b> <a href='?_src_=prefs;preference=selected_accent;task=input'>[selected_accent]</a>"
 	dat += "<br>"
-	dat += "<br><b>Features:</b> <a href='?_src_=prefs;preference=customizers;task=menu'>Change</a>"
+	dat += "<br><b>Черты Лица:</b> <a href='?_src_=prefs;preference=customizers;task=menu'>Изменить</a>"
 	if(length(pref_species.descriptor_choices))
-		dat += "<br><b>Descriptors:</b> <a href='?_src_=prefs;preference=descriptors;task=menu'>Change</a>"
+		dat += "<br><b>Дескрипторы:</b> <a href='?_src_=prefs;preference=descriptors;task=menu'>Изменить</a>"
 		dat += "<br>"
 
-	dat += "<br><b>Headshot:</b> <a href='?_src_=prefs;preference=headshot;task=input'>Change</a>"
+	dat += "<br><b>Портрет:</b> <a href='?_src_=prefs;preference=headshot;task=input'>Изменить</a>"
 	if(headshot_link != null)
 		dat += "<br><img src='[headshot_link]' width='100px' height='100px'>"
-	dat += "<br><b>Flavortext:</b> <a href='?_src_=prefs;preference=flavortext;task=input'>Change</a>"
+	dat += "<br><b>Флавор:</b> <a href='?_src_=prefs;preference=flavortext;task=input'>Изменить</a>"
 	dat += "<br></td>"
 
 	dat += "</tr></table>"
@@ -376,8 +376,8 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	dat += "</table>"
 
 	if(!IsGuestKey(user.key))
-		dat += "<a href='?_src_=prefs;preference=save'>Save</a><br>"
-		dat += "<a href='?_src_=prefs;preference=load'>Undo</a><br>"
+		dat += "<a href='?_src_=prefs;preference=save'>Сохранить</a><br>"
+		dat += "<a href='?_src_=prefs;preference=load'>Отменить</a><br>"
 
 	// well.... one empty slot here for something I suppose lol
 	dat += "<table width='100%'>"
@@ -386,37 +386,37 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	dat += "<td width='33%' align='center'>"
 	var/mob/dead/new_player/N = user
 	if(istype(N))
-		dat += "<a href='?_src_=prefs;preference=bespecial'><b>[next_special_trait ? "<font color='red'>SPECIAL</font>" : "BE SPECIAL"]</b></a><BR>"
+		dat += "<a href='?_src_=prefs;preference=bespecial'><b>[next_special_trait ? "<font color='red'>ОСОБЕННЫЙ</font>" : "БЫТЬ ОСОБЕННЫМ"]</b></a><BR>"
 		if(SSticker.current_state <= GAME_STATE_PREGAME)
 			switch(N.ready)
 				if(PLAYER_NOT_READY)
-					dat += "<b>UNREADY</b> <a href='byond://?src=[REF(N)];ready=[PLAYER_READY_TO_PLAY]'>READY</a>"
+					dat += "<b>НЕ ГОТОВ</b> <a href='byond://?src=[REF(N)];ready=[PLAYER_READY_TO_PLAY]'>ГОТОВ</a>"
 				if(PLAYER_READY_TO_PLAY)
-					dat += "<a href='byond://?src=[REF(N)];ready=[PLAYER_NOT_READY]'>UNREADY</a> <b>READY</b>"
+					dat += "<a href='byond://?src=[REF(N)];ready=[PLAYER_NOT_READY]'>НЕ ГОТОВ</a> <b>ГОТОВ</b>"
 		else
 			if(!is_active_migrant())
-				dat += "<a href='byond://?src=[REF(N)];late_join=1'>JOINLATE</a>"
+				dat += "<a href='byond://?src=[REF(N)];late_join=1'>ПРИСОЕДИНИТЬСЯ</a>"
 			else
-				dat += "<a class='linkOff' href='byond://?src=[REF(N)];late_join=1'>JOINLATE</a>"
-			dat += " - <a href='?_src_=prefs;preference=migrants'>MIGRATION</a>"
-			dat += "<br><a href='?_src_=prefs;preference=manifest'>ACTORS</a>"
+				dat += "<a class='linkOff' href='byond://?src=[REF(N)];late_join=1'>ПРИСОЕДИНИТЬСЯ</a>"
+			dat += " - <a href='?_src_=prefs;preference=migrants'>МИГРАЦИЯ</a>"
+			dat += "<br><a href='?_src_=prefs;preference=manifest'>АКТЁРЫ</a>"
 	else
-		dat += "<a href='?_src_=prefs;preference=finished'>DONE</a>"
+		dat += "<a href='?_src_=prefs;preference=finished'>ГОТОВО</a>"
 		dat += "</center>"
 
 	dat += "</td>"
 	dat += "<td width='33%' align='right'>"
-	dat += "<b>Be Voice:</b> <a href='?_src_=prefs;preference=schizo_voice'>[(toggles & SCHIZO_VOICE) ? "Enabled":"Disabled"]</a>"
+	dat += "<b>Быть Голосом:</b> <a href='?_src_=prefs;preference=schizo_voice'>[(toggles & SCHIZO_VOICE) ? "Включено" : "Отключено"]</a>"
 	dat += "</td>"
 	dat += "</tr>"
 	dat += "</table>"
 
 	if(user.client.is_new_player())
-		dat = list("<center>REGISTER!</center>")
+		dat = list("<center>ЗАРЕГЕСТРИРУЙСЯ!</center>")
 
 	winshow(user, "stonekeep_prefwin", TRUE)
 	winshow(user, "stonekeep_prefwin.character_preview_map", TRUE)
-	var/datum/browser/noclose/popup = new(user, "preferences_browser", "<div align='center'>Character Sheet</div>")
+	var/datum/browser/noclose/popup = new(user, "preferences_browser", "<div align='center'>Лист персонажа</div>")
 	popup.set_window_options(can_close = FALSE)
 	popup.set_content(dat.Join())
 	popup.open(FALSE)
@@ -446,7 +446,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	</script>
 	"}
 	winshow(user, "capturekeypress", TRUE)
-	var/datum/browser/noclose/popup = new(user, "capturekeypress", "<div align='center'>Keybindings</div>", 350, 300)
+	var/datum/browser/noclose/popup = new(user, "capturekeypress", "<div align='center'>Привязка клавиш</div>", 350, 300)
 	popup.set_content(HTML)
 	popup.open(FALSE)
 	onclose(user, "capturekeypress", src)
@@ -468,14 +468,14 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	HTML+="<center>"
 
 	if(!length(SSjob.joinable_occupations))
-		HTML += "<center><a href='?_src_=prefs;preference=job;task=close'>Done</a></center><br>" // Easier to press up here.
+		HTML += "<center><a href='?_src_=prefs;preference=job;task=close'>Готово</a></center><br>" // Easier to press up here.
 	else
 		//HTML += "<b>Choose class preferences</b><br>"
 		//HTML += "<div align='center'>Left-click to raise a class preference, right-click to lower it.<br></div>"
-		HTML += "<center><a href='?_src_=prefs;preference=job;task=close'>Done</a></center><br>" // Easier to press up here.
+		HTML += "<center><a href='?_src_=prefs;preference=job;task=close'>Готово</a></center><br>" // Easier to press up here.
 		if(joblessrole != RETURNTOLOBBY && joblessrole != BERANDOMJOB) // this is to catch those that used the previous definition and reset.
 			joblessrole = RETURNTOLOBBY
-		HTML += "<b>If Role Unavailable:</b><font color='purple'><a href='?_src_=prefs;preference=job;task=nojob'>[joblessrole]</a></font><BR>"
+		HTML += "<b>Если Роль Недоступна:</b><font color='purple'><a href='?_src_=prefs;preference=job;task=nojob'>[joblessrole]</a></font><BR>"
 		HTML += "<script type='text/javascript'>function setJobPrefRedirect(level, rank) { window.location.href='?_src_=prefs;preference=job;task=setJobLevel;level=' + level + ';text=' + encodeURIComponent(rank); return false; }</script>"
 		HTML += "<table width='100%' cellpadding='1' cellspacing='0'><tr><td width='20%'>" // Table within a table for alignment, also allows you to easily add more colomns.
 		HTML += "<table width='100%' cellpadding='1' cellspacing='0'>"
@@ -589,22 +589,22 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 
 			switch(job_preferences[job.title])
 				if(JP_HIGH)
-					prefLevelLabel = "High"
+					prefLevelLabel = "Высокая"
 					prefLevelColor = "slateblue"
 					prefUpperLevel = 4
 					prefLowerLevel = 2
 				if(JP_MEDIUM)
-					prefLevelLabel = "Medium"
+					prefLevelLabel = "Средняя"
 					prefLevelColor = "green"
 					prefUpperLevel = 1
 					prefLowerLevel = 3
 				if(JP_LOW)
-					prefLevelLabel = "Low"
+					prefLevelLabel = "Низкая"
 					prefLevelColor = "orange"
 					prefUpperLevel = 2
 					prefLowerLevel = 4
 				else
-					prefLevelLabel = "NEVER"
+					prefLevelLabel = "НИКОГДА"
 					prefLevelColor = "red"
 					prefUpperLevel = 3
 					prefLowerLevel = 1
@@ -629,11 +629,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 			HTML += "<br>"
 		HTML += "<center><a href='?_src_=prefs;preference=job;task=reset'>Reset</a></center>"
 
-	HTML += {"
-	</body>
-	</html>
-	"}
-	var/datum/browser/noclose/popup = new(user, "mob_occupation", "<div align='center'>Class Selection</div>", width, height)
+	var/datum/browser/noclose/popup = new(user, "mob_occupation", "<div align='center'>Выбор Класса</div>", width, height)
 	popup.set_window_options(can_close = FALSE)
 	popup.set_head_content(HTMLhead)
 	popup.set_content(HTML.Join())
@@ -1041,10 +1037,10 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 						to_chat(user, "<font color='white'>Blessed with boon(s): [selected_patron.boons]</font>")
 
 				if("voice")
-					var/new_voice = input(user, "SELECT YOUR HERO'S VOICE COLOR", "THE THROAT","#"+voice_color) as color|null
+					var/new_voice = input(user, "ВЫБЕРИ ГОЛОС СВОЕГО ГЕРОЯ", "ГОРЛО","#"+voice_color) as color|null
 					if(new_voice)
 						if(color_hex2num(new_voice) < 230)
-							to_chat(user, "<font color='red'>This voice color is too dark for mortals.</font>")
+							to_chat(user, "<font color='red'>Такой голос слишком тёмный для смертных.</font>")
 							return
 						voice_color = sanitize_hexcolor(new_voice)
 
@@ -1552,6 +1548,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 
 			. = {"
 			<html>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 			<head>
 			  <style>
 			    body {
@@ -1579,6 +1576,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 
 			. = {"
 			<html>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 			<head>
 			  <style>
 			    body {
