@@ -1,0 +1,19 @@
+{
+    "map_name": "Slavvilage",
+    "map_path": "vanderslav/slavvillage",
+    "map_file": "slavvillage.dmm",
+	"immigrant_origin": "Knyazhen",
+	"monarch_title": "Knyaz",
+	"monarch_title_f": "Knyaginya",
+	"traits": [
+		{"Up": true, "Turf Weather Effects": true, "Cellar": true},
+		{"Up": true, "Down": true, "Turf Weather Effects": true, "Leylines": true},
+		{"Up": true, "Down": true, "Turf Weather Effects": true, "Leylines": true},
+		{"Up": true, "Down": true, "Turf Weather Effects": true},
+		{"Down": true, "Turf Weather Effects": true}
+	],
+	"minetype": null,
+	"space_empty_levels": 0,
+	"space_ruin_levels": 0,
+	"custom_area_sound": "sound/misc/stings/RosewoodSting.ogg"
+}

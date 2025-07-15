@@ -13,6 +13,11 @@ Format:
 	votable (is this map votable)
 endmap
 
+map slavvilage
+	votable
+	default
+endmap
+
 map vanderlin
 	votable
 endmap
@@ -31,3 +36,4 @@ map whitepalacepass
 	maxplayers 90
 	votable
 endmap
+
