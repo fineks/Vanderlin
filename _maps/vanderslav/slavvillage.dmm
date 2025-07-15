@@ -916,6 +916,12 @@
 	},
 /turf/open/floor/cobble,
 /area/rogue/indoors/town/garrison)
+"aYt" = (
+/obj/effect/landmark/start/varyag{
+	dir = 1
+	},
+/turf/open/floor/carpet/lord/left,
+/area/rogue/indoors/town/manor)
 "aYF" = (
 /obj/machinery/light/fueled/torchholder{
 	pixel_y = 26
@@ -2175,6 +2181,12 @@
 /obj/machinery/light/fueled/firebowl/stumpb,
 /turf/open/floor/hexstone,
 /area/rogue/indoors/town/church)
+"cjq" = (
+/obj/effect/landmark/start/varyag{
+	dir = 1
+	},
+/turf/open/floor/carpet/lord/center,
+/area/rogue/indoors/town/manor)
 "cju" = (
 /obj/structure/table/wood{
 	dir = 10;
@@ -2908,6 +2920,7 @@
 /obj/structure/bed/hay{
 	pixel_y = 19
 	},
+/obj/effect/landmark/start/chumak,
 /turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/town/shop)
 "cYw" = (
@@ -5051,6 +5064,12 @@
 /obj/item/natural/feather,
 /turf/open/floor/churchmarble,
 /area/rogue/indoors/town/church/inquisition)
+"fgy" = (
+/obj/effect/landmark/start/varyag{
+	dir = 1
+	},
+/turf/open/floor/carpet/lord/right,
+/area/rogue/indoors/town/manor)
 "fhj" = (
 /obj/machinery/light/fueled/wallfire/candle/blue/r,
 /obj/structure/fluff/railing/border{
@@ -13597,6 +13616,13 @@
 	},
 /turf/open/floor/naturalstone,
 /area/rogue/outdoors/town)
+"nDG" = (
+/obj/structure/chair/wood/alt/chair3,
+/obj/effect/landmark/start/chumak{
+	dir = 4
+	},
+/turf/open/floor/ruinedwood/turned/darker,
+/area/rogue/indoors/town/shop)
 "nDS" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/closed/wall/mineral/stonebrick,
@@ -13809,6 +13835,9 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/start/varyag{
+	dir = 4
+	},
 /turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/town/tavern)
 "nPp" = (
@@ -21078,6 +21107,9 @@
 /obj/structure/chair/wood/alt/chair3{
 	dir = 1
 	},
+/obj/effect/landmark/start/chumak{
+	dir = 1
+	},
 /turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/town/shop)
 "uGC" = (
@@ -24443,6 +24475,7 @@
 "xNt" = (
 /obj/structure/chair/wood/alt/chair3,
 /obj/machinery/light/fueled/wallfire/candle/skull/r,
+/obj/effect/landmark/start/varyag,
 /turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/town/tavern)
 "xNH" = (
@@ -123962,7 +123995,7 @@ tUM
 eAH
 eAH
 gco
-tUM
+aYt
 tUM
 tUM
 tUM
@@ -124164,7 +124197,7 @@ dFS
 ibv
 ibv
 uyM
-nsd
+cjq
 nsd
 nsd
 nsd
@@ -124366,7 +124399,7 @@ uHG
 icR
 icR
 aSx
-uHG
+fgy
 uHG
 uHG
 uHG
@@ -140560,7 +140593,7 @@ wtz
 vUv
 kqz
 oEs
-rRr
+nDG
 jJB
 uGz
 oEs
