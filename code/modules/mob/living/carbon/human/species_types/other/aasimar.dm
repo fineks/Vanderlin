@@ -25,7 +25,7 @@
 	Many resemble sculptures of stones or ceramic in skin, \
 	but their insides are just as mortal as any other."
 
-	skin_tone_wording = "Crafted With"
+	skin_tone_wording = "Сотворено Из"
 
 	species_traits = list(EYECOLOR, HAIR, FACEHAIR, LIPS, OLDGREY)
 	inherent_traits = list(TRAIT_NOMOBSWAP)

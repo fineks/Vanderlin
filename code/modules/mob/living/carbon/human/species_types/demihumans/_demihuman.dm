@@ -12,7 +12,7 @@
 	To the unaligned observer, Hollowkin are often seen amongst bandit bands, Working openly with Agents of Matthios, conflating the idea of freedom between the two deities. There is, of course, the old wives' tales that circulate... how Hollowkin lead to infestations of Werewolves. Weather this is true or not is unknown to the normal man, but to those familiar with the horrendous magics used by the drow, they have no choice but to assume. To Orcs and goblins, they are good eats.\
 	Hollowkin are often denied nobility due to these rumors alone, though their animalism certainly does not help. If one miraculously does appear in the court, they are treated at best like a pet, though more likely distrusted as just another bandit people of Amber Hollow."
 
-	skin_tone_wording = "Ancestry"
+	skin_tone_wording = "Происхождение"
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR, HAIR ,FACEHAIR, LIPS, STUBBLE, OLDGREY)
 	default_features = MANDATORY_FEATURE_LIST

@@ -26,7 +26,7 @@
 	depending on how strong their fathers, or mothers, genes were. \
 	Half-Elves also typically try to find identity."
 
-	skin_tone_wording = "Half-Elven Identity"
+	skin_tone_wording = "Наследие Полу-Эльфа"
 
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR, HAIR, FACEHAIR, LIPS, STUBBLE, OLDGREY)

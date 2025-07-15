@@ -108,11 +108,11 @@
 #define RANDOMIZE_HAIR_ALL (RANDOMIZE_HAIR_FEATURES | RANDOMIZE_HAIR_COLORS)
 
 //Age ranges
-#define AGE_CHILD			"Youngling"
-#define AGE_ADULT			"Adult"
-#define AGE_MIDDLEAGED		"Middle-Aged"
-#define AGE_OLD				"Old"
-#define AGE_IMMORTAL		"Immortal"
+#define AGE_CHILD			"Молодняк"
+#define AGE_ADULT			"Взрослый"
+#define AGE_MIDDLEAGED		"Средних Лет"
+#define AGE_OLD				"Престарелый"
+#define AGE_IMMORTAL		"Бессмертный"
 
 #define NORMAL_AGES_LIST			list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 #define NORMAL_AGES_LIST_CHILD		list(AGE_CHILD, AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
