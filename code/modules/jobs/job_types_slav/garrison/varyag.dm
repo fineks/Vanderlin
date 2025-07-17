@@ -1,5 +1,5 @@
 /datum/advclass/combat/vikingr
-	name = "Varyag"
+	name = "Варяг"
 	tutorial = "Отец князя оставил тебя как своего гвардейца приглядеть за потомком. Ты решил что чадо уже выросло и ушёл кутить... Твоя форма уже не та"
 	outfit = /datum/outfit/job/adventurer/vikingr
 	category_tags = list(CTAG_ADVENTURER)
